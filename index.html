@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ポートフォリオ | あなたの名前</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 自己紹介セクション -->
+    <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-container">
+            <!-- プロフィール画像 -->
+            <img src="images/profile.jpg" alt="プロフィール写真" class="profile-img" />
+            <div class="intro-text">
+                <!-- 「プロフィール」ラベル -->
+                <p class="label">プロフィール</p>
+                <!-- 氏名 -->
+                <h3>多那瀬　周</h3>
+                <!-- 自己紹介文（UT-virtual所属を追加） -->
+                <p>
+                    同志社大学　理工学部インテリジェント情報工学科　３年生<br>
+                    サークル：UT-virtual 所属<a href="https://utvirtual.tech/">(UT-virtual)</a><br>
+                    これまでCGプログラミング，Unityゲーム開発，Chrome拡張「Tabit」など複数のプロジェクトに携わる．<br>
+                    興味分野：ゲーム開発，UI開発<br>
+                    連絡先：<a href="mailto:tanashu3@gmail.com">tanashu3@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- スキル一覧セクション -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>言語：C, C++, C#, Javs, JavaScript, Lua</li>
+            <li>フレームワーク／ライブラリ：Unity, Roblox Studio, React, React Native</li>
+            <li>ツール：Git/GitHub, Blender, VSCode，Unity Version Control</li>
+            <li>その他：WebExtension API, Node.js</li>
+        </ul>
+    </section>
+
+    <!-- プロジェクト紹介セクション -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <!-- ShockHold プロジェクト-->
+        <div class="project-card">
+            <h3>ShockHold（VR金庫防衛シューティング）</h3>
+            <img src="images/shockhold.png" alt="ShockHold スクリーンショット" class="project-img" />
+            <p>
+                <div class="subsection">
+                    <h4>概要：</h4>
+                    <p>
+                        「Shock Hold」は、4人チームで制作したVR専用の3Dシューティングゲーム。
+                        空・海・陸のあらゆる方向から押し寄せる敵から金庫を守るゲームで、
+                        プレイヤーは自ら銃を手に取り、現実の身体を動かしながら臨場感ある戦闘を体験できる。<br>
+                        [担当範囲]<br>
+                        難易度ごとのステージ自動生成機能、グレネードランチャーによる地形破壊機能(Unity(C#), Blender)
+                    </p>
+                </div>
+                <div class="features">
+                    <h4>特徴：</h4>
+                    <ul class="features-list">
+                        <li>
+                            <strong>VRならではの臨場感と操作感：</strong>
+                            実際のエアガンをコントローラーとして用い、発射時の反動を光センサーで検知してトリガーに連動させることで、視覚・触覚を組み合わせたリアルな射撃体験を実現。
+                        </li>
+                        <li>
+                            <strong>難易度選択とバイオーム変化(ステージの自動生成)：</strong>
+                            <ul>
+                                <li>Easyモード：開放的な草原ステージ。敵は赤いアウトラインで常に見えるため、初心者や子どもでも遊びやすい。</li>
+                                <li>Hardモード：ジャングルのように暗く複雑な地形が生成され、敵の接近が分かりづらく緊張感が高まる。</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </p>
+            <p>
+                <div class="subsection">
+                    <h4>展示・実績：</h4>
+                    <ul class="subsection-list">
+                        <li>東京大学五月祭にて1プレイ500円で出展、多数の体験者を集めアンケートも実施。</li>
+                        <li>現在もフィードバックを活かし、次回展示（駒場祭）に向けて開発を継続中。</li>
+                    </ul>
+                    <h4>関連リンク：</h4>
+                    <p class="links">
+                        <a href="https://dyecon.github.io/shockHold/" target="_blank">ShockHold公式ページ</a> |
+                        <a href="https://youtu.be/yj_4LSQL_9s" target="_blank">体験動画vol1.1.0(サークル内発表)</a>|
+                        <a href="https://youtu.be/7N8qsHZpClg" target="_blank">体験動画vol2.0.0(5月祭展示)</a>|
+                        <a href="https://youtu.be/ZhDc_zUdXNE" target="_blank">5月祭用アテンド解説動画</a>
+                    </p>
+                </div>
+            </p>
+           
+        </div>
+
+        <!-- Tabit プロジェクト -->
+        <div class="project-card">
+            <h3>Tabit（Chrome拡張）</h3>
+            <img src="images/project1.png" alt="Tabit スクリーンショット" class="project-img" />
+            <p>
+                概要：タブ閲覧時間に応じて自動グループ化するChrome拡張。
+                技術：JavaScript, HTML, CSS, WebExtension API, LocalStorage, Spring Boot（バックエンド）
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/tabit" target="_blank">GitHub リポジトリ</a> |
+                <a href="https://your-demo-url" target="_blank">デモサイト</a>
+            </p>
+        </div>
+
+        <!-- Unityゲームプロジェクト -->
+        <div class="project-card">
+            <h3>Typing HERO（Unityゲーム）</h3>
+            <img src="images/project2.png" alt="Typing HERO スクショ" class="project-img" />
+            <p>
+                概要：タイピングで敵を倒す横スクロールRPG。ハッカソンで開発、チーム3人で協力。
+                技術：Unity (C#), 敵AI, シーン遷移, Fadeアニメーション, タイピング演出スクリプト
+            </p>
+            <p>
+                <a href="https://github.com/yourusername/typing-hero" target="_blank">GitHub リポジトリ</a> |
+                <a href="https://your-demo-url" target="_blank">動画デモ</a>
+            </p>
+        </div>
+
+        <!-- 他のプロジェクトも同様にカードを追加 -->
+    </section>
+
+    <!-- 連絡先セクション -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>気軽にご連絡ください：</p>
+        <form id="contactForm">
+            <label for="name">名前</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">メールアドレス</label><br />
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="message">メッセージ</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea><br />
+
+            <!-- static サイトなので、送信先は mailto: か Formspree を利用 -->
+            <button type="submit">送信</button>
+        </form>
+        <p class="sns-links">
+            SNS：
+            <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a> |
+            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a> |
+            Slack: <span>your-slack-username</span>
+        </p>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>© 2025 あなたの名前</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
