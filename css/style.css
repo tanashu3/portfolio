@@ -253,6 +253,157 @@ footer {
     margin-bottom: 1.5em; /* 好みで調整：1em～2em あたりが目安 */
 }
 
+/* 埋め込み動画の余白 */
+.video-embed {
+    margin-bottom: 1.5em;
+}
 
 
-/* すでにある特徴リストのスタイルはそのまま */
+
+
+/* vol1.1 の動画だけ少し小さく */
+#vol11Container {
+    max-width: 360px; /* お好みで幅を調整 */
+    margin: 1em auto; /* 上下に少し余白、左右中央寄せ */
+}
+
+    #vol11Container iframe {
+        width: 100%; /* コンテナ幅いっぱいに */
+        height: auto;
+        aspect-ratio: 16 / 9; /* 16:9 の比率を保つ */
+    }
+
+
+/* ────────────────────────────────────────
+   プロフィール写真を小さく丸く
+──────────────────────────────────────── */
+.profile-img {
+    width: 120px; /* 横幅120px に固定 */
+    height: 120px; /* 縦も同じ */
+    object-fit: cover; /* アスペクト比を保ったまま切り抜き */
+    margin-bottom: 20px;
+}
+
+/* ────────────────────────────────────────
+   各プロジェクトのスクショを同じ大きさに
+──────────────────────────────────────── */
+/* デフォルト: 幅は親要素100％だが、最大幅を400pxに制限 */
+.project-img {
+    width: 100%;
+    max-width: 400px; /* 好みで300px／350pxに調整OK */
+    height: auto;
+    border-radius: 4px;
+    margin: 0 auto 10px; /* 中央寄せ＋下に余白 */
+}
+
+/* ────────────────────────────────────────
+   Tabit用だけもっと小さくしたい場合
+──────────────────────────────────────── */
+/* HTML側で <img class="project-img project-img--small"> とするか、 下記のようにnth-of-typeで絞り込み */
+.project-card:nth-of-type(2) .project-img {
+    max-width: 300px; /* Tabitだけ300pxに */
+}
+/* 途中経過リンクを小さく・中央寄せ */
+.note-link {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+    .note-link a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .note-link a:hover {
+            text-decoration: underline;
+        }
+/* video-row直下の余白をなくす */
+.video-row {
+    margin-bottom: 0; /* 余白をゼロに */
+}
+
+/* 途中経過リンクを小さく・中央寄せ */
+.note-link {
+    text-align: center;
+    margin: 0; /* 既存のマージンをリセット */
+    padding: 0.5em 0; /* 上下にちょっとスペースを入れる */
+    margin-bottom: 1.5em; /* ← ここで下に余白を作る */
+    font-size: 0.9rem;
+    color: #555;
+}
+/* ────────────────────────────────────────
+   全プロジェクトカードにMaterial Elevation風シャドウ
+──────────────────────────────────────── */
+.project-card {
+    /* Elevation 4 相当 */
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 200ms ease;
+}
+
+    /* ホバーで少し深い Elevation 6 に */
+    .project-card:hover {
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    }
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 動画間のすきま */
+    margin-bottom: 1.5em; /* 下の見出しとの余白 */
+}
+
+    /* 各動画コンテナ */
+    .video-row .video-embed {
+        flex: 1 1 45%; /* 幅は親の45%を目安に、自動調整 */
+        min-width: 280px; /* あまり小さくなりすぎないように */
+    }
+
+/* iframe のサイズを幅いっぱい、高さは自動 */
+.video-embed iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* 比率固定（モダンブラウザ向け） */
+}
+/* 小見出し（既存の .subsection h4 が適用されます） */
+.subsection h4 {
+    /* 例: 見出しスタイルは省略 （すでに実装済み） */
+}
+
+/* デモ動画を中央寄せ＆幅 50% に */
+.demo-video {
+    text-align: center; /* 中央寄せ */
+    margin: 1em 0; /* 上下に余白 */
+}
+
+    .demo-video iframe {
+        width: 50%; /* 親要素幅の半分 */
+        max-width: 600px; /* 必要なら上限を設定 */
+        aspect-ratio: 16 / 9; /* アスペクト比を固定 */
+        border: none;
+        border-radius: 4px;
+    }
+
+/* 初期状態で詳細は隠す */
+.project-details {
+    display: none;
+    margin-top: 1em;
+}
+
+/* ボタンのスタイル */
+.toggle-details {
+    display: inline-block;
+    margin: 0.5em 0;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .toggle-details:hover {
+        background-color: #0056b3;
+    }

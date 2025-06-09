@@ -18,32 +18,19 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 // ————————————————————————————————
-// 2. Contact フォーム送信（mailto:）
+// 2. 「詳細を見る」ボタンの表示切り替え
 // ————————————————————————————————
-const form = document.getElementById('contactForm');
-if (form) {
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        // フォームの値を取得
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.toggle-details').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const details = btn.nextElementSibling;
+            const isHidden = getComputedStyle(details).display === 'none';
 
-        // 簡易バリデーション：未入力チェック
-        if (!name || !email || !message) {
-            alert('すべての項目を入力してください。');
-            return;
-        }
+            // 詳細の表示／非表示を切り替え
+            details.style.display = isHidden ? 'block' : 'none';
 
-        // mailto 用の件名・本文を組み立て
-        const subject = encodeURIComponent(`ポートフォリオサイトからのお問い合わせ: ${name}`);
-        const body = encodeURIComponent(
-            `名前: ${name}\n` +
-            `メール: ${email}\n\n` +
-            `メッセージ:\n${message}`
-        );
-
-        // mailto リンクを生成して遷移（user のメーラーが起動）
-        window.location.href = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+            // ボタンテキストも切り替え
+            btn.textContent = isHidden ? '詳細を閉じる' : '詳細を見る';
+        });
     });
-}
+});

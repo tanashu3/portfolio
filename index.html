@@ -13,6 +13,7 @@
             <ul class="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -33,15 +34,13 @@
                 <!-- 自己紹介文（UT-virtual所属を追加） -->
                 <p>
                     同志社大学　理工学部インテリジェント情報工学科　３年生<br>
-                    サークル：UT-virtual 所属<a href="https://utvirtual.tech/">(UT-virtual)</a><br>
-                    これまでCGプログラミング，Unityゲーム開発，Chrome拡張「Tabit」など複数のプロジェクトに携わる．<br>
-                    興味分野：ゲーム開発，UI開発<br>
-                    連絡先：<a href="mailto:tanashu3@gmail.com">tanashu3@gmail.com</a>
+                    サークル：UT-virtual 所属　8期生<a href="https://utvirtual.tech/">(UT-virtual)</a><br>
+                    これまでCGプログラミング、Unityゲーム開発、Chrome拡張「Tabit」など複数のプロジェクトに携わる。<br>
+                    興味分野：ゲーム開発、UI開発<br>
                 </p>
             </div>
         </div>
     </section>
-
 
     <!-- スキル一覧セクション -->
     <section id="skills" class="section">
@@ -54,14 +53,62 @@
         </ul>
     </section>
 
+    <!-- 経験セクション -->
+    <section id="experience" class="section">
+        <h2>Experiences</h2>
+        <div class="project-card">
+            <h3 class="project-title">株式会社moze（Robloxゲーム開発インターン）</h3>
+            <p>
+                Robloxゲームを専門に開発する株式会社mozeにて、<strong>長期インターンとして新規ゲーム企画に携わっている。</strong><br>
+                現在は企画立案の前段階として、Roblox内で流行している人気ゲームを中心に、<br>そのゲーム性・マーケティング・UI・配信者連携などを多角的に分析し、報告書としてまとめる業務を担当。<br>
+                プレイヤー心理やトレンド要因を整理することで、より魅力的なゲーム企画への知見を蓄積している。<br>
+                今後は自身が提案した企画をもとに、<strong>実際のゲーム開発・リリース・運営にも一貫して関わる予定。</strong><br>
+                ▶<a href="https://www.moze.ai/">株式会社mozeホームページ</a>
+            </p>
+            <!-- Roblox人気ゲーム分析レポート -->
+            <div class="subsection">
+                <h4>Robloxプラットフォームにおける人気ゲームの成功要因</h4>
+                <p>
+                    Roblox内で上位にランクインする複数のPvP・PvEゲームを調査し、<br>
+                    プレイヤー維持率の高さや収益性、配信者との連携など、ヒットを支える要素を分析。<br>
+                    マーケティング戦略やゲーム設計（報酬ループ・UI/UX・導線設計）を分解して、
+                    成功に必要な構造をモデル化した。<br>
+                    ▶ <a href="docs/roblox_hit_analysis.pdf" target="_blank">分析レポート（PDF）を開く</a>
+                </p>
+            </div>
+
+            <!-- Robloxホラーゲーム分析レポート -->
+            <div class="subsection">
+                <h4>Robloxホラーゲーム分析レポート</h4>
+                <p>
+                    『DOORS』や『Rainbow Friends』などRoblox上で人気のホラーゲームを対象に、<br>
+                    ストーリーテリング・恐怖演出・ユーザー層・拡散要因（実況配信等）を調査。
+                    年齢層に応じた怖がらせ方の違いや、<br>マルチプレイによる共体験が人気を後押しする構造に注目し、
+                    今後の企画立案に向けた分析を行った。<br>
+                    ▶ <a href="docs/roblox_horror_analysis.pdf" target="_blank">ホラーゲームレポート（PDF）を開く</a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- プロジェクト紹介セクション -->
     <section id="projects" class="section">
         <h2>Projects</h2>
         <!-- ShockHold プロジェクト-->
         <div class="project-card">
-            <h3>ShockHold（VR金庫防衛シューティング）</h3>
+            <!-- ① タイトル -->
+            <h3 class="project-title">ShockHold（Unityゲーム）</h3>
+
+            <!-- ② サムネイル画像 -->
             <img src="images/shockhold.png" alt="ShockHold スクリーンショット" class="project-img" />
-            <p>
+
+            <!-- ③ 詳細を開くボタン -->
+            <button class="toggle-details">詳細を見る</button>
+
+            <!-- ④ ここに従来の各 <div class="subsection"> ～ リンク などをまとめておく -->
+            <div class="project-details">
                 <div class="subsection">
                     <h4>概要：</h4>
                     <p>
@@ -90,85 +137,224 @@
 
 
                 </div>
-            </p>
-            <p>
-                <div class="subsection">
-                    <h4>展示・実績：</h4>
-                    <ul class="subsection-list">
-                        <li>東京大学五月祭にて1プレイ500円で出展、多数の体験者を集めアンケートも実施。</li>
-                        <li>現在もフィードバックを活かし、次回展示（駒場祭）に向けて開発を継続中。</li>
-                    </ul>
-                    <h4>関連リンク：</h4>
-                    <p class="links">
-                        <a href="https://dyecon.github.io/shockHold/" target="_blank">ShockHold公式ページ</a> |
-                        <a href="https://youtu.be/yj_4LSQL_9s" target="_blank">体験動画vol1.1.0(サークル内発表)</a>|
-                        <a href="https://youtu.be/7N8qsHZpClg" target="_blank">体験動画vol2.0.0(5月祭展示)</a>|
-                        <a href="https://youtu.be/ZhDc_zUdXNE" target="_blank">5月祭用アテンド解説動画</a>
-                    </p>
-                </div>
-            </p>
-           
+                <p>
+                    <div class="subsection">
+                        <h4>展示・実績：</h4>
+                        <ul class="subsection-list">
+                            <li><strong>東京大学五月祭</strong>にて1プレイ500円で出展、多数の体験者を集めアンケートも実施。</li>
+                            <li>現在もフィードバックを活かし、<strong>次回展示（駒場祭）に向けて開発を継続中。</strong></li>
+                            <li>公式サイト：<a href="https://dyecon.github.io/shockHold/" target="_blank">ShockHold公式ページ</a></li>
+                        </ul>
+                        <div class="subsection">
+                            <h4>デモ動画：</h4>
+
+                            <!-- ▼ ここを追加 -->
+                            <div class="video-row">
+                                <div class="video-embed">
+                                    <p><strong>体験動画 vol2.0.0（5月祭展示）</strong></p>
+                                    <iframe src="https://www.youtube.com/embed/7N8qsHZpClg"
+                                            title="体験動画 vol2.0.0"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+
+                                <div class="video-embed">
+                                    <p><strong>5月祭用アテンド解説動画</strong></p>
+                                    <iframe src="https://www.youtube.com/embed/ZhDc_zUdXNE"
+                                            title="アテンド解説動画"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+
+                            <p class="note-link">
+                                途中経過：<a href="https://youtu.be/yj_4LSQL_9s" target="_blank">体験動画 vol1.1.0（サークル内発表）</a>
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+            </div>
         </div>
+
 
         <!-- Tabit プロジェクト -->
         <div class="project-card">
-            <h3>Tabit（Chrome拡張）</h3>
-            <img src="images/project1.png" alt="Tabit スクリーンショット" class="project-img" />
-            <p>
-                概要：タブ閲覧時間に応じて自動グループ化するChrome拡張。
-                技術：JavaScript, HTML, CSS, WebExtension API, LocalStorage, Spring Boot（バックエンド）
-            </p>
-            <p>
-                <a href="https://github.com/yourusername/tabit" target="_blank">GitHub リポジトリ</a> |
-                <a href="https://your-demo-url" target="_blank">デモサイト</a>
-            </p>
+
+            <!-- ① タイトル -->
+            <h3 class="project-title"> Tabit・Tabitat（タブ自動整理ツール & 教育向け拡張webサイト)</h3>
+
+            <!-- ② サムネイル画像 -->
+            <img src="images/tabit.png" alt="Tabit スクリーンショット" class="project-img" />
+
+            <!-- ③ 詳細を開くボタン -->
+            <button class="toggle-details">詳細を見る</button>
+
+            <!-- ④ ここに従来の各 <div class="subsection"> ～ リンク などをまとめておく -->
+            <div class="project-details">
+
+                <!-- 概要 -->
+                <div class="subsection">
+                    <h4>概要：</h4>
+                    <p>
+                        Tabit は、2人チームで開発した、開きすぎたタブを自動分類・グループ化し、整理状態を常に保つ Chrome 拡張。<br>
+                        作業中に増えがちなブラウザタブを、内容・キーワード・閲覧時間に基づいて分類し、
+                        ユーザーの思考を妨げずに最適な作業環境を提供する。<br>
+                        さらに教育機関や企業向けに展開した「Tabitat」ではタブの状態共有・管理・制御機能を備え、授業や業務の効率化を支援。<br>
+                        [担当範囲]<br>
+                        UI設計、Chromeの拡張機能のグループ化する機能全般、TabitatとTabit側で情報をやり取りする機構のTabit側を実装
+
+
+                    </p>
+                </div>
+
+                <!-- 主な機能 -->
+                <div class="subsection">
+                    <h4>主な機能：</h4>
+                    <ul class="subsection-list">
+                        <li>
+                            <strong>自動ジャンル分類＆グループ化：</strong>
+                            作業・調査・SNS などに応じてタブを自動整理し、グループ化。
+                        </li>
+                        <li>
+                            <strong>ウィンドウを横断したタブ検索・統合機能：</strong>
+                            キーワード一致するタブを別ウィンドウからも検索し、1つのウィンドウにまとめて表示。
+                        </li>
+                        <li>
+                            <strong>直感的な UI 設計：</strong>
+                            ホバーで拡大するボタン、ワンクリックで展開・折りたたみ可能な操作性を両立。
+                        </li>
+                        <li>
+                            <strong>TabitatによるTabitの機能拡張：</strong>
+                            教師 / 管理者によるタブ共有・同期・監視が可能なWeb連携型拡張
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 開発背景 -->
+                <div class="subsection">
+                    <h4>開発背景：</h4>
+                    <p>
+                        Unity開発中に増え続けるタブの煩雑さとウィンドウ間の混乱を解消するため、<br>UIと実用性を両立したChrome拡張「Tabit」を
+                        開発し、チームの作業効率を向上させた。さらに、Web活用が進む教育現場を想定し、先生が全生徒の端末に指定サイトを一斉表示できる機能を加えた「Tabitat」を開発した。
+                    </p>
+                </div>
+
+                <!-- 実績・反響 -->
+                <div class="subsection">
+                    <h4>実績・反響：</h4>
+                    <ul class="subsection-list">
+                        <li>OPEN HACK U OSAKA 2025 <strong>優秀賞（全体2位）</strong>受賞</li>
+                        <li>技育博2025 にて多数の企業から関心を獲得し、<strong>技術書の贈呈</strong>を受け、<strong>オフィス見学・懇親会にも招待</strong></li>
+                        <li>
+                            Chrome Web Store：<a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln?utm_source=item-share-cb">Tabitサイト</a><br>
+                            (現在リリースされているのはプロトタイプバージョンであり、一部機能未実装。現在最新版のリリースを申請中)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tabit／ShockHold 共通の書き方 -->
+                <div class="subsection">
+                    <h4>デモ動画：</h4>
+                    <div class="demo-video">
+                        <iframe src="https://www.youtube.com/embed/FbF4foxe-ls"
+                                title="Tabit デモ動画"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <!-- Unityゲームプロジェクト -->
         <div class="project-card">
-            <h3>Typing HERO（Unityゲーム）</h3>
-            <img src="images/project2.png" alt="Typing HERO スクショ" class="project-img" />
-            <p>
-                概要：タイピングで敵を倒す横スクロールRPG。ハッカソンで開発、チーム3人で協力。
-                技術：Unity (C#), 敵AI, シーン遷移, Fadeアニメーション, タイピング演出スクリプト
-            </p>
-            <p>
-                <a href="https://github.com/yourusername/typing-hero" target="_blank">GitHub リポジトリ</a> |
-                <a href="https://your-demo-url" target="_blank">動画デモ</a>
-            </p>
+            <!-- ① タイトル -->
+            <h3 class="project-title">TypingHero（Unityゲーム）</h3>
+
+            <!-- ② サムネイル画像 -->
+            <img src="images/typing-hero.png" alt="Tabit スクリーンショット" class="project-img" />
+
+            <!-- ③ 詳細を開くボタン -->
+            <button class="toggle-details">詳細を見る</button>
+
+            <!-- ④ ここに従来の各 <div class="subsection"> ～ リンク などをまとめておく -->
+            <div class="project-details">
+                <!-- 概要 -->
+                <div class="subsection">
+                    <h4>概要：</h4>
+                    <p>
+                        タイピングで敵を倒しながら物語を進める、2D横スクロール形式の学習RPG。<br>
+                        ハッカソンでプロトタイプを4人チームで作成。大会後は個人で企画・実装・演出まで一貫して開発し、<br>快感と成長を両立させた学習体験を提供。<br>
+                        [担当範囲]<br>
+                        UI設計、バトルロジック、アニメーション演出（Unity / C#）
+                    </p>
+                </div>
+
+                <!-- 特徴 -->
+                <div class="subsection">
+                    <h4>特徴：</h4>
+                    <ul class="subsection-list">
+                        <li>
+                            <strong>成功率に応じた攻撃演出とダメージ変化：</strong>
+                            正確な入力ほど攻撃演出が豪華になり、ダメージも増加。
+                            タイピングへの集中と達成感を高める設計。
+                        </li>
+                        <li>
+                            <strong>入力傾向に応じた個別難易度：</strong>
+                            過去の入力精度から苦手な文字列を分析し、出現頻度を調整。
+                            プレイヤーに合った学習体験を実現。
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 展示・実績 -->
+                <div class="subsection">
+                    <h4>展示・実績：</h4>
+                    <ul class="subsection-list">
+                        <li>「技育ハッカソン2024 vol.23」3位入賞</li>
+                        <li>UIと学習性の融合が評価され、現在も一般公開に向けて継続開発中</li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <h4>デモ動画(大会用の紹介動画)：</h4>
+                    <div class="demo-video">
+                        <iframe src="https://www.youtube.com/embed/iV4nOJY4aY8"
+                                title="Tabit デモ動画"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <!-- 他のプロジェクトも同様にカードを追加 -->
     </section>
 
-    <!-- 連絡先セクション -->
+    <!-- 連絡先セクション（シンプル版） -->
     <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>気軽にご連絡ください：</p>
-        <form id="contactForm">
-            <label for="name">名前</label><br />
-            <input type="text" id="name" name="name" required /><br />
-
-            <label for="email">メールアドレス</label><br />
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="message">メッセージ</label><br />
-            <textarea id="message" name="message" rows="4" required></textarea><br />
-
-            <!-- static サイトなので、送信先は mailto: か Formspree を利用 -->
-            <button type="submit">送信</button>
-        </form>
-        <p class="sns-links">
-            SNS：
-            <a href="https://twitter.com/your_twitter" target="_blank">Twitter</a> |
-            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank">LinkedIn</a> |
-            Slack: <span>your-slack-username</span>
-        </p>
+        <p>ご連絡・制作物の確認はこちらから：</p>
+        <ul class="subsection-list">
+            <li><strong>メール：</strong><a href="mailto:tanashu3@gmail.com">tanashu3@gmail.com</a></li>
+            <li><strong>GitHub：</strong><a href="https://github.com/tanashu3" target="_blank">github.com/tanashu3</a></li>
+        </ul>
     </section>
 
     <!-- フッター -->
     <footer>
-        <p>© 2025 あなたの名前</p>
+        <p>© 2025 多那瀬周</p>
     </footer>
 
     <script src="js/main.js"></script>
