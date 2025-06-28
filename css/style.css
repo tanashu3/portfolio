@@ -1,4 +1,4 @@
-﻿/* リセット（お好みで normalize.css など導入してもよい） */
+ /* リセット（お好みで normalize.css など導入してもよい） */
 * {
     margin: 0;
     padding: 0;
@@ -241,6 +241,7 @@ footer {
         line-height: 1.6;
         margin-left: 1em; /* 小見出しとテキストがボーダーにくっつかないよう */
     }
+
 .subsection-list {
     list-style-type: disc; /* ●マーカー */
     list-style-position: outside; /* マーカーを外側に */
@@ -284,25 +285,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* ────────────────────────────────────────
-   各プロジェクトのスクショを同じ大きさに
-──────────────────────────────────────── */
-/* デフォルト: 幅は親要素100％だが、最大幅を400pxに制限 */
-.project-img {
-    width: 100%;
-    max-width: 400px; /* 好みで300px／350pxに調整OK */
-    height: auto;
-    border-radius: 4px;
-    margin: 0 auto 10px; /* 中央寄せ＋下に余白 */
-}
 
-/* ────────────────────────────────────────
-   Tabit用だけもっと小さくしたい場合
-──────────────────────────────────────── */
-/* HTML側で <img class="project-img project-img--small"> とするか、 下記のようにnth-of-typeで絞り込み */
-.project-card:nth-of-type(2) .project-img {
-    max-width: 300px; /* Tabitだけ300pxに */
-}
 /* 途中経過リンクを小さく・中央寄せ */
 .note-link {
     text-align: center;
@@ -407,3 +390,68 @@ footer {
     .toggle-details:hover {
         background-color: #0056b3;
     }
+
+/* --- 画像スライダー用のスタイル --- */
+
+/* --- 画像スライダー用のスタイル --- */
+
+/* スライダー全体のコンテナ（ここでサイズを制御） */
+.image-slider {
+    position: relative;
+    width: 100%;
+    /* ↓↓↓ 以前のデフォルトサイズだった400pxに変更 ↓↓↓ */
+    max-width: 400px;
+    margin: 0 auto 10px; /* 中央寄せと下に余白 */
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+/* ▼▼▼ Tabitプロジェクトのスライダーだけ、さらに小さくする設定を追加 ▼▼▼ */
+.project-card:nth-of-type(2) .image-slider {
+    max-width: 300px; /* 以前のTabit用サイズだった300pxに設定 */
+}
+
+/* 複数の画像を横並びにするコンテナ */
+.slider-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* スライダー内の各画像 */
+.image-slider .project-img {
+    width: 100%;
+    flex-shrink: 0;
+    max-width: 100%; /* 親要素(スライダー)の幅に合わせる */
+    margin: 0; /* 余白をリセット */
+    border-radius: 0;
+    display: block;
+}
+
+/* 左右の矢印ボタンの共通スタイル（変更なし） */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.2s ease;
+}
+
+    .prev-btn:hover,
+    .next-btn:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
