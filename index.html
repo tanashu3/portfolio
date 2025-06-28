@@ -72,10 +72,11 @@
                 <div class="subsection">
                     <h4>概要：</h4>
                     <p>
-                        Robloxゲームを専門に開発する株式会社mozeにて、長期インターンとして新規ゲームの企画・開発に携わっています。<br>
+                        Robloxゲームを専門に開発する株式会社mozeにて、長期インターンとして<strong>新規ゲームの企画・開発</strong>に携わっています。<br>
                         当初はRobloxの人気ゲーム分析と報告書作成を担当していましたが、現在は自身が立案した企画のディレクション業務へ移行。<strong>3名のチームをまとめ、ディレクター的な役割を担っています。</strong><br>
                         <br>
-                        主な業務は、プランナー目線でゲームの仕様を策定し、タスクとして具体化することです。例えば、「ロビーからゲーム内へのテレポート機能」や「プレイヤーが移動するアニメーション」といった要素の仕様書を作成し、チームメンバーへのタスクの割り振りやレビューを行っています。<br>
+                        主な業務は、プランナー目線でゲームの仕様を策定し、タスクとして具体化することです。例えば、「ロビーからゲーム内へのテレポート機能」や「プレイヤーが移動するアニメーション」といった要素の仕様書を作成し、
+                        チームメンバーへの<strong>タスクの割り振りやレビュー</strong>を行っています。<br>
                         チーム全体の進捗管理や流れの決定を担う傍ら、自身も環境アート制作を担当。周囲のサポートを受けながら、<br>
                         <strong>企画から開発、チームマネジメント</strong>まで一貫して挑戦しています。<br>
                         ▶<a href="https://www.moze.ai/">株式会社mozeホームページ</a>
@@ -107,13 +108,17 @@
         <h2>Projects</h2>
         <!-- ShockHold プロジェクト-->
         <div class="project-card">
-            <!-- ① タイトル -->
             <h3 class="project-title">ShockHold（Unityゲーム）</h3>
 
-            <!-- ② サムネイル画像 -->
-            <img src="images/shockhold.png" alt="ShockHold スクリーンショット" class="project-img" />
-
-            <!-- ③ 詳細を開くボタン -->
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="images/shockhold1.png" alt="ShockHold スクリーンショット 1" class="project-img" />
+                    <img src="images/shockhold2.png" alt="ShockHold スクリーンショット 2" class="project-img" />
+                    <img src="images/shockhold3.png" alt="ShockHold スクリーンショット 3" class="project-img" />
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
             <button class="toggle-details">詳細を見る</button>
 
             <!-- ④ ここに従来の各 <div class="subsection"> ～ リンク などをまとめておく -->
@@ -152,7 +157,7 @@
                         <ul class="subsection-list">
                             <li><strong>東京大学五月祭</strong>にて1プレイ500円で出展、多数の体験者を集めアンケートも実施。</li>
                             <li>現在もフィードバックを活かし、<strong>次回展示（駒場祭）に向けて開発を継続中。</strong></li>
-                            <li>公式サイト：<a href="https://dyecon.github.io/shockHold/" target="_blank">ShockHold公式ページ</a></li>
+                            <li>▶公式サイト：<a href="https://dyecon.github.io/shockHold/" target="_blank">ShockHold公式ページ</a></li>
                         </ul>
                         <div class="subsection">
                             <h4>デモ動画：</h4>
@@ -199,8 +204,15 @@
             <!-- ① タイトル -->
             <h3 class="project-title"> Tabit・Tabitat（タブ自動整理ツール & 教育向け拡張webサイト)</h3>
 
-            <!-- ② サムネイル画像 -->
-            <img src="images/tabit.png" alt="Tabit スクリーンショット" class="project-img" />
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="images/tabit1.png" alt="Tabit スクリーンショット 1" class="project-img" />
+                    <img src="images/tabit2.png" alt="Tabit スクリーンショット 2" class="project-img" />
+                    <img src="images/tabit3.png" alt="Tabit スクリーンショット 3" class="project-img" />
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
 
             <!-- ③ 詳細を開くボタン -->
             <button class="toggle-details">詳細を見る</button>
@@ -236,14 +248,22 @@
                             キーワード一致するタブを別ウィンドウからも検索し、1つのウィンドウにまとめて表示。
                         </li>
                         <li>
-                            <strong>直感的な UI 設計：</strong>
-                            ホバーで拡大するボタン、ワンクリックで展開・折りたたみ可能な操作性を両立。
+                            <strong>一覧からのタブ編集：</strong>
+                            Tabit上の一覧からタブを削除したり、ドラッグ＆ドロップで順番を移動可能。
                         </li>
                         <li>
                             <strong>TabitatによるTabitの機能拡張：</strong>
                             教師 / 管理者によるタブ共有・同期・監視が可能なWeb連携型拡張
                         </li>
                     </ul>
+                </div>
+
+                <div class="subsection">
+                    <h4>【UI/UX面】でのこだわり：</h4>
+                    <p>
+                        直感的な操作性を追求し、普段ブラウザで行うタブ操作（ドラッグ＆ドロップでの移動や削除）をそのまま再現。さらに、ホバーで拡大するボタンやワンクリックで展開・折りたたみ可能な操作性を両立することで、ユーザーが説明なしでも直感的に使えることを目指しました。<br>
+                        この「慣れ親しんだ操作を新しい製品にも取り入れる」という思想は、AppleのHuman Interface Guidelinesなどを参考にしたもので、学習コストを下げ、快適な使用感に繋げました。
+                    </p>
                 </div>
 
                 <!-- 開発背景 -->
@@ -262,7 +282,7 @@
                         <li>OPEN HACK U OSAKA 2025 <strong>優秀賞（全体2位）</strong>受賞</li>
                         <li>技育博2025 にて多数の企業から関心を獲得し、<strong>技術書の贈呈</strong>を受け、<strong>オフィス見学・懇親会にも招待</strong></li>
                         <li>
-                            Chrome Web Store：<a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln?utm_source=item-share-cb">Tabitサイト</a>
+                            ▶Chrome Web Store：<a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln?utm_source=item-share-cb">Tabitサイト</a>
                         </li>
                     </ul>
                 </div>
@@ -288,8 +308,15 @@
             <!-- ① タイトル -->
             <h3 class="project-title">TypingHero（Unityゲーム）</h3>
 
-            <!-- ② サムネイル画像 -->
-            <img src="images/typing-hero.png" alt="Tabit スクリーンショット" class="project-img" />
+            <div class="image-slider">
+                <div class="slider-container">
+                    <img src="images/typing-hero1.png" alt="TypingHero スクリーンショット 1" class="project-img" />
+                    <img src="images/typing-hero2.png" alt="TypingHero スクリーンショット 2" class="project-img" />
+                    <img src="images/typing-hero3.png" alt="TypingHero スクリーンショット 3" class="project-img" />
+                </div>
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
 
             <!-- ③ 詳細を開くボタン -->
             <button class="toggle-details">詳細を見る</button>
@@ -330,7 +357,7 @@
                     <ul class="subsection-list">
                         <li>「技育ハッカソン2024 vol.23」3位入賞</li>
                         <li>UIと学習性の融合が評価され、現在も一般公開に向けて継続開発中</li>
-                        <li>Unity Playで公開中: <a href="https://play.unity.com/ja/games/b9aa9478-fca8-4a03-ba26-d3dc4d3b400a/typinghero" target="_blank" rel="noopener noreferrer">Unity Play | TypingHero game</a></li>
+                        <li>▶Unity Playで公開中: <a href="https://play.unity.com/ja/games/b9aa9478-fca8-4a03-ba26-d3dc4d3b400a/typinghero" target="_blank" rel="noopener noreferrer">Unity Play | TypingHero game</a></li>
                     </ul>
                 </div>
                 <div class="subsection">
@@ -386,7 +413,7 @@
                     <ul class="subsection-list">
                         <li>UT-virtual内で開催された、<strong>株式会社ambr主催のRobloxハッカソン</strong>にて <strong>2位（UT-virtual賞）</strong> を受賞。</li>
                         <li>限られた制作時間内での完成度、ロブロックスらしさを意識した設計、新規性のあるシステムが高く評価された。</li>
-                        <li>実際にリリースしたゲームURL：<a href="https://www.roblox.com/ja/games/78996187287078/3D">「おもちゃタワーバトル3D」</a><br></li>
+                        <li>▶実際にリリースしたゲームURL：<a href="https://www.roblox.com/ja/games/78996187287078/3D">「おもちゃタワーバトル3D」</a><br></li>
                     </ul>
                 </div>
             </div>
