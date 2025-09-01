@@ -580,3 +580,95 @@ footer {
 }
 
 /* スクロールバーはOverviewと同じ見た目を継承（.overview-scrollを使用） */
+/* ===== Overview / Achievements : ラージカード & 説明文 ===== */
+.overview-scroll {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 6px 0 10px;
+}
+
+.overview-item, .achv-item {
+    flex: 0 0 auto;
+    width: 280px; /* 大きめボックス */
+    min-height: 104px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 14px;
+    padding: 12px 14px;
+    scroll-snap-align: start;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+    transition: transform .08s ease, box-shadow .12s ease, background-color .2s ease;
+}
+
+    .overview-item:hover, .achv-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    }
+
+    .overview-item img, .achv-item img {
+        width: 52px;
+        height: 52px;
+        object-fit: contain;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid #ddd;
+        flex: none;
+    }
+
+/* タイトル＋1行説明 */
+.ov-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.ov-title {
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #111;
+}
+
+.ov-desc {
+    font-size: .88rem;
+    line-height: 1.3;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Achievements用：バッジ風を先頭に置く場合（任意） */
+.achv-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+    font-size: .78rem;
+    margin-right: 6px;
+}
+
+/* モバイルは少し狭めに */
+@media (max-width:560px) {
+    .overview-item, .achv-item {
+        width: 240px;
+    }
+
+        .overview-item img, .achv-item img {
+            width: 48px;
+            height: 48px;
+        }
+}
+
