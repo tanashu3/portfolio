@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience | 多那瀬周</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#overview">Index</a></li>
+                <li><a href="index.html#achievements">Achievements</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 自己紹介 -->
+    <!-- 経験 -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="project-card" id="exp-moze">
+            <h3 class="project-title">株式会社moze（Robloxゲーム開発インターン）</h3>
+            <img src="images/moze-logo.png" alt="mozeインターン" class="project-img" loading="lazy" />
+
+            <!-- アクセシビリティ属性を付与 -->
+            <button class="toggle-details" aria-expanded="false" aria-controls="moze-details">詳細を見る</button>
+
+            <div id="moze-details" class="project-details">
+                <div class="subsection">
+                    <h4>概要</h4>
+                    <p>
+                        Robloxの<strong>企画〜ディレクション</strong>を担当（3名体制）。要件定義→タスク設計→レビューまで一貫して推進。<br>
+                        自分主導のタイトル<strong>「Stairs」</strong>をリリースし、現在はダッシュボードで<strong>Retention</strong>（Day1/Day7など）や行動データを見ながら、
+                        <strong>レベル設計・難易度・演出のアップデート</strong>に継続的に携わっています。<br>
+                        ▶<a href="https://www.moze.ai/" target="_blank" rel="noopener noreferrer">株式会社mozeホームページ</a>
+                    </p>
+                </div>
+
+                <div class="subsection">
+                    <h4>Roblox人気ゲーム分析レポート：</h4>
+                    <p>
+                        プレイヤー維持率・収益性・配信者連携など、ヒット作の構造を分析。<br>
+                        ▶ <a href="docs/roblox_hit_analysis.pdf" target="_blank" rel="noopener noreferrer">分析レポート（PDF）を開く</a>
+                    </p>
+                </div>
+
+                <div class="subsection">
+                    <h4>ホラーゲーム分析レポート：</h4>
+                    <p>
+                        『DOORS』『Rainbow Friends』などの演出・共体験要素・拡散性を分析。<br>
+                        ▶ <a href="docs/roblox_horror_analysis.pdf" target="_blank" rel="noopener noreferrer">ホラーゲームレポート（PDF）を開く</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: サイバーエージェント UIDA -->
+        <div class="project-card" id="exp-uida">
+            <h3 class="project-title">サイバーエージェント UIDA（デザインサマーインターン）</h3>
+            <div class="image-slider image-slider--narrow" aria-label="UIDA インターン スクリーンショット">
+                <div class="slider-container">
+                    <img src="images/uida1.png" alt="UIDA インターン スクリーンショット 1" class="project-img" loading="lazy" />
+                    <img src="images/uida2.png" alt="UIDA インターン スクリーンショット 2" class="project-img" loading="lazy" />
+                </div>
+                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
+                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
+            </div>
+            <button class="toggle-details">詳細を見る</button>
+            <div class="project-details">
+                <div class="subsection">
+                    <h4>参加概要</h4>
+                    <ul class="subsection-list">
+                        <li>テーマは<strong>全員共通</strong>、チームは分かれて活動（相互に相談し合う仲間というスタイル）。</li>
+                        <li>作品制作は<strong>個人で完遂</strong>（情報設計〜デザイン〜実装まで自身で担当）。</li>
+                        <li>これまで<strong>エンジニア</strong>としてゲーム制作を行ってきたが、<strong>デザイナーとしてゲームUI</strong>を作るのは初挑戦。</li>
+                        <li>チームメンバーやメンターからの助言を得ながら、完成度の高いUIを設計・制作。</li>
+                    </ul>
+                    <p class="note-link">
+                        ▶ 公式情報：<a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" rel="noopener noreferrer">UIDA - CyberAgent</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" id="exp-cygames">
+            <h3 class="project-title">サイゲームズ サマーインターン（エンジニア）</h3>
+
+            <!-- ロゴはMoze/UIDAと同じ見た目で統一 -->
+            <img src="images/cygames.png" alt="Cygames サマーインターン" class="project-img logo" loading="lazy" />
+
+            <button class="toggle-details" aria-expanded="false" aria-controls="cygames-details">詳細を見る</button>
+            <div id="cygames-details" class="project-details">
+                <div class="subsection">
+                    <h4>参加概要</h4>
+                    <ul class="subsection-list">
+                        <li><strong>エンジニアサマーインターン</strong>に参加。現場メンターのレビューのもと、短期開発課題に取り組みました。</li>
+                        <li>課せられた課題を着実にこなし、ゲーム開発の実務フロー（要件整理→実装→検証→改善）を体験。</li>
+                        <li><strong>チーム開発でのコミュニケーション力や実装能力を高く評価</strong>された。</li>
+                    </ul>
+                    <p class="note-link">
+                        ▶ 公式情報：<a href="https://fresh.cygames.co.jp/internship/detail.html?engineer&summer" target="_blank" rel="noopener noreferrer">Cygames Summer Internship（エンジニア）</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- フッター -->
+    <footer>
+        <p>© 2025 多那瀬周</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+    </html>
