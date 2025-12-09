@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements | 多那瀬周 Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Shu Tanase</a>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="achievements.html" class="current">Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+
+        <article class="project-card" id="achv-hacku">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">OPEN HACK U OSAKA 2025</h3>
+                    <div class="tech-stack">
+                        <span class="badge gold">優秀賞 (2位)</span>
+                        <span class="badge">Tabit</span>
+                        <span class="badge">Team Dev</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-tabit" class="btn-primary">View Project: Tabit</a>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/achievements/hacku_thumb.png" alt="Hack U サムネイル" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_presen.png" alt="発表の様子" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_award.png" alt="授賞式" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_group.png" alt="集合写真" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※スライドして当日の様子をご覧いただけます</p>
+                </div>
+
+                <div class="project-info">
+                    <p><strong>受賞名：</strong> 優秀賞（全体2位）</p>
+                    <p><strong>作品：</strong> Tabit (Chrome Extension)</p>
+
+                    <h4>評価ポイント</h4>
+                    <ul>
+                        <li><strong>技術力と完成度：</strong>Chrome拡張機能としてのAPI活用技術と、バグの少ない高い完成度。</li>
+                        <li><strong>プレゼンテーション：</strong>課題提起から解決策提示までのストーリー構成と、デモのスムーズさ。</li>
+                    </ul>
+
+                    <button class="toggle-details" aria-expanded="false" aria-controls="hacku-details">詳細エピソード</button>
+                    <div id="hacku-details" class="project-details" style="display:none;">
+                        <p>審査員の方々からは「既存のタブ管理ツールと比べてもUXが直感的で、すぐにでも使いたい」とのコメントを頂きました。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-geekhaku">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">技育博 2025</h3>
+                    <div class="tech-stack">
+                        <span class="badge award">企業賞・招待</span>
+                        <span class="badge">Tabit</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-tabit" class="btn-primary">View Project: Tabit</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/geekhaku_thumb.png" alt="技育博" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong> エンジニア学生のための技術展示会「技育博」に出展。</p>
+                    <ul>
+                        <li>複数の企業様より「技術書」の贈呈を受けました。</li>
+                        <li>オフィス見学および懇親会へ招待いただきました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-geekhack">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">技育ハッカソン 2024 vol.23</h3>
+                    <div class="tech-stack">
+                        <span class="badge bronze">3位</span>
+                        <span class="badge">TypingHero</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-typinghero" class="btn-primary">View Project: TypingHero</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/geekhack_thumb.png" alt="技育ハッカソン" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>受賞名：</strong> チーム開発部門 3位</p>
+                    <p><strong>作品：</strong> TypingHero (Unity RPG)</p>
+                    <ul>
+                        <li>ハッカソン期間内での実装完遂力と、ゲーム×学習を組み合わせたコンセプトが評価されました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-utv">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Robloxハッカソン (ambr主催)</h3>
+                    <div class="tech-stack">
+                        <span class="badge silver">2位 (UT-virtual賞)</span>
+                        <span class="badge">おもちゃタワーバトル3D</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-toytower" class="btn-primary">View Project: Toy Tower</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/utv_thumb.png" alt="UT-virtual賞" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong> 株式会社ambr主催のサークル内ハッカソンにて受賞。</p>
+                    <ul>
+                        <li>Robloxの物理演算を活かした「自分が積み重なる」というユニークなゲーム性が評価されました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p style="text-align:center; margin-top:50px; color:#888;">© 2025 Shu Tanase</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
