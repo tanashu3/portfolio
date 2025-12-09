@@ -3,199 +3,867 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ポートフォリオ | 多那瀬周</title>
+    <title>Shu Tanase | Game Engineer Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <nav class="navbar">
+            <a href="#" class="nav-brand">Shu Tanase</a>
             <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#overview">Index</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- 自己紹介 -->
     <section id="about" class="section">
-        <h2>About</h2>
-        <div class="about-container">
-            <img src="images/profile.jpg" alt="プロフィール写真" class="profile-img" />
-            <div class="intro-text">
-                <p class="label">プロフィール</p>
-                <h3>多那瀬　周</h3>
+        <div class="hero-wrapper">
+            <img src="images/profile.jpg" alt="多那瀬周" class="profile-img" />
+            <div class="hero-content">
+                <span class="hero-role">Game Engineer / Unity Developer</span>
+                <h3>多那瀬 周 (Shu Tanase)</h3>
                 <p>
-                    同志社大学　理工学部インテリジェント情報工学科　３年生<br>
-                    <strong>・サークル</strong>：UT-virtual 所属　8期生
-                    <a href="https://utvirtual.tech/" target="_blank" rel="noopener noreferrer">(UT-virtual)</a><br>
-                    <strong>・経験</strong>　　：Unityゲーム開発、Robloxゲーム開発でのディレクション業務、Chrome拡張の開発など<br>
-                    <strong>・興味分野</strong>：ゲーム開発、UI開発<br>
-                    <br>
-                    <strong>[Skills]</strong>
+                    同志社大学 理工学部 インテリジェント情報工学科 3年<br>
+                    UT-virtual 8期生
                 </p>
-
-                <ul class="skill-list">
-                    <li>使用言語：C, C++, C#, Java, JavaScript, Lua</li>
-                    <li>フレームワーク／ライブラリ：Unity, Roblox Studio, React, React Native</li>
-                    <li>ツール：Git/GitHub, Blender, VSCode，Unity Version Control</li>
-                    <li>その他：WebExtension API, Node.js</li>
-                </ul>
+                <div class="tech-stack">
+                    <span class="badge unity">Unity</span>
+                    <span class="badge csharp">C#</span>
+                    <span class="badge roblox">Roblox</span>
+                    <span class="badge js">JavaScript</span>
+                    <span class="badge figma">Figma</span>
+                    <span class="badge ai">Illustrator</span>
+                    <span class="badge ps">Photoshop</span>
+                    <span class="badge">Git</span>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.95rem; color: #555;">
+                    「遊ぶ人、見る人、作る人、全員が笑顔になれる体験」をテーマに、UnityやRobloxを用いたゲーム開発を行っています。
+                    単に機能を実装するだけでなく、技術を用いて「楽しさの共有」や「空間の一体感」を生み出すことを大切にしており、エンジニアリングからUI/UX設計、企画まで、ユーザー体験を最大化するための幅広い領域に挑戦しています。
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="overview" class="section">
-        <h2>Index</h2>
+   
 
-        <!-- Experience row -->
-        <div class="overview">
-            <h3 class="overview-title">Experience</h3>
-            <div class="overview-scroll" role="navigation" aria-label="経験の一覧">
-                <a class="overview-item" href="experience.html#exp-moze">
-                    <img src="images/icons/moze-logo.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>moze（Intern）</strong></div>
-                        <div class="ov-desc">Robloxタイトル「Stairs」の企画・ディレクション〜運用改善</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="experience.html#exp-uida">
-                    <img src="images/icons/uida1.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>CyberAgent（UIDA）</strong></div>
-                        <div class="ov-desc">個人制作でゲームUI一式を設計。3D×2DのUI統合に挑戦</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="experience.html#exp-cygames">
-                    <img src="images/icons/cygames.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>Cygames（Intern）</strong></div>
-                        <div class="ov-desc">短期開発課題を完遂。チーム開発の実装力・コミュ力を評価</div>
-                    </div>
-                </a>
+    <section id="affiliation" class="section">
+        <h2 class="section-title">Affiliation</h2>
+        <div class="project-card" style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap;">
+            <div style="flex: 0 0 120px; text-align: center;">
+                <img src="images/icons/ut-virtual.png" alt="UT-virtual Logo" style="width: 120px; height: 120px; object-fit: contain; border-radius: 50%; border: 1px solid #eee; box-shadow: 0 4px 10px rgba(0,0,0,0.1); background: #fff;">
             </div>
-        </div>
-
-        <!-- Projects row -->
-        <div class="overview">
-            <h3 class="overview-title">Projects</h3>
-            <div class="overview-scroll" role="navigation" aria-label="プロジェクトの一覧">
-                <a class="overview-item" href="projects.html#proj-stairs">
-                    <img src="images/icons/stairs.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>Stairs</strong></div>
-                        <div class="ov-desc">ホラー脱出。階段＝危険／フロア＝安全の緊張と緩和</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="projects.html#proj-uida">
-                    <img src="images/icons/uida-p1.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>UIDA UI Design</strong></div>
-                        <div class="ov-desc">個人制作のUIデザイン。ホームで3Dモデルを重要ボタン化</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="projects.html#proj-shockhold">
-                    <img src="images/icons/shockhold1.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>ShockHold</strong></div>
-                        <div class="ov-desc">VRシューター。地形破壊と難易度別の自動生成を担当</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="projects.html#proj-tabit">
-                    <img src="images/icons/tabit1.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>Tabit / Tabitat</strong></div>
-                        <div class="ov-desc">タブ自動整理＆教育向けWeb。大会で優秀賞・企業招待</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="projects.html#proj-typinghero">
-                    <img src="images/icons/typing-hero1.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>TypingHero</strong></div>
-                        <div class="ov-desc">音ゲー×タイピング。操作感と譜面演出を重視</div>
-                    </div>
-                </a>
-
-                <a class="overview-item" href="projects.html#proj-toytower">
-                    <img src="images/icons/toy-tower.png" alt="">
-                    <div class="ov-text">
-                        <div class="ov-title"><strong>おもちゃタワーバトル3D</strong></div>
-                        <div class="ov-desc">Robloxハッカソン制作。UT-virtual賞2位</div>
-                    </div>
-                </a>
-            </div>
-            <div class="overview-jump">
-                <a href="experience.html#experience" class="jump-btn">▼ Experienceへ移動</a>
-                <a href="projects.html#projects" class="jump-btn">▼ Projectsへ移動</a>
-            </div>
-        </div>
-        <section id="achievements" class="section">
-            <h2>Achievements</h2>
-
-            <div class="overview">
-                <h3 class="overview-title">受賞・公開など</h3>
-                <div class="overview-scroll" role="navigation" aria-label="実績の一覧">
-                    <!-- Tabit / Tabitat：優秀賞 -->
-                    <a class="overview-item" href="projects.html#proj-tabit" title="OPEN HACK U OSAKA 2025 優秀賞（全体2位）">
-                        <img src="images/icons/award.png" alt="" />
-                        <span>OPEN HACK U OSAKA 2025 優秀賞</span>
+            <div style="flex: 1;">
+                <h3 style="margin-top: 0; font-size: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    東京大学VRサークル UT-virtual
+                    <a href="https://utvirtual.tech" target="_blank" style="font-size: 0.9rem; color: var(--primary-color); text-decoration: none;">
+                        <i class="fas fa-external-link-alt"></i> Official Site
                     </a>
+                </h3>
+                <p style="color: #666; margin-bottom: 15px;">VR/AR技術の普及と体験創造を目指す、東大発のインカレサークル</p>
 
-                    <!-- Tabit / Tabitat：技育博 招待 -->
-                    <a class="overview-item" href="projects.html#proj-tabit" title="技育博2025 企業招待・贈呈">
-                        <img src="images/icons/invite.png" alt="" />
-                        <span>技育博2025 企業招待</span>
-                    </a>
+                <p>
+                    京都在住ですが、高い志を持つ仲間と理想的な開発環境を求め、東京大学のインカレサークルに参加しています。
+                    五月祭や駒場祭などのイベントでは、サークルとして制作したゲームの展示を行っています。
+                </p>
 
-                    <!-- TypingHero：3位 -->
-                    <a class="overview-item" href="projects.html#proj-typinghero" title="技育ハッカソン2024 vol.23 3位">
-                        <img src="images/icons/trophy3.png" alt="" />
-                        <span>技育ハッカソン2024 vol.23 3位</span>
-                    </a>
+                <h4 style="margin-top: 15px; font-size: 1rem; border-bottom: 1px solid #eee; padding-bottom: 5px;">主な役割・活動スタイル</h4>
+                <ul style="list-style: disc; margin-left: 20px; margin-top: 10px; line-height: 1.8;">
+                    <li><strong>リモート運営（京都）：</strong> 物理的な距離があるため、普段はSNS運用、外部メディアへの記事寄稿、イベントのタイムテーブル作成など、オンラインで完結する運営業務を中心に貢献しています。</li>
+                    <li><strong>現地アテンド（東京）：</strong> イベント当日は東京へ向かい、設営から当日の来場者アテンドまでを担当。制作物を直接ユーザーに届ける「接点」の役割を担っています。</li>
+                </ul>
 
-                    <!-- おもちゃタワーバトル3D：2位 -->
-                    <a class="overview-item" href="projects.html#proj-toytower" title="UT-virtual賞 2位（ambr主催）">
-                        <img src="images/icons/trophy2.png" alt="" />
-                        <span>UT-virtual賞（ambr主催）2位</span>
-                    </a>
-
-                    <!-- Stairs：公開 -->
-                    <a class="overview-item" href="projects.html#proj-stairs" title="Roblox で公開">
-                        <img src="images/icons/stairs.png" alt="" />
-                        <span>Stairs 公開（Roblox）</span>
+                <div style="margin-top: 20px;">
+                    <a href="https://vr-lifemagazine.com/ut-virtualvr_komabasai/?utm_source=rss&utm_medium=rss&utm_campaign=ut-virtualvr_komabasai" target="_blank" class="btn-secondary" style="font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                        <span>📝</span> 寄稿記事：『学生VRサークルUT-virtual』VR/AR体験展示が東大駒場祭に！
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
 
+   
 
+    <section id="experience-preview" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="overview-scroll">
+            <a href="experience.html#exp-moze" class="overview-item card-interactive">
+                <img src="images/moze-logo.png" alt="Moze" style="object-fit: contain; padding: 5px;">
+                <div class="ov-text">
+                    <div class="ov-title">株式会社moze</div>
+                    <div class="badge role">Intern</div>
+                    <div class="ov-desc">企画・ディレクション・分析</div>
+                </div>
+            </a>
+            <a href="experience.html#exp-uida" class="overview-item card-interactive">
+                <img src="images/icons/uida1.png" alt="UIDA">
+                <div class="ov-text">
+                    <div class="ov-title">CyberAgent UIDA</div>
+                    <div class="badge role">Design Intern</div>
+                    <div class="ov-desc">UIデザイナーとして参加</div>
+                </div>
+            </a>
+            <a href="experience.html#exp-cygames" class="overview-item card-interactive">
+                <img src="images/icons/cygames.png" alt="Cygames">
+                <div class="ov-text">
+                    <div class="ov-title">Cygames Internship</div>
+                    <div class="badge role">Engineer Intern</div>
+                    <div class="ov-desc">大規模開発フローの習得</div>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="experience.html" class="btn-secondary" style="font-size:0.9rem; padding: 5px 15px; border-radius: 4px; text-decoration: none;">View All Experience →</a>
+        </div>
+    </section>
 
-    <!-- 連絡先 -->
+    <section id="highlights" class="section">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <h3 class="category-title" style="font-size: 1.2rem; margin-top: 20px; border-bottom: 1px solid #eee;">Engineering & Game Dev</h3>
+        <div class="overview-scroll">
+            <a href="projects.html#proj-stairs" class="overview-item card-interactive">
+                <img src="images/icons/stairs.png" alt="Stairs">
+                <div class="ov-text">
+                    <div class="ov-title">Stairs</div>
+                    <div class="badge roblox">Roblox</div>
+                    <div class="ov-desc">ホラー脱出ゲーム</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-shockhold" class="overview-item card-interactive">
+                <img src="images/icons/shockhold1.png" alt="ShockHold">
+                <div class="ov-text">
+                    <div class="ov-title">ShockHold</div>
+                    <div class="badge unity">Unity VR</div>
+                    <div class="ov-desc">地形破壊と自動生成</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-tabit" class="overview-item card-interactive">
+                <img src="images/icons/tabit1.png" alt="Tabit">
+                <div class="ov-text">
+                    <div class="ov-title">Tabit</div>
+                    <div class="badge js">Chrome Ext</div>
+                    <div class="ov-desc">優秀賞受賞作品</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-typinghero" class="overview-item card-interactive">
+                <img src="images/icons/typing-hero1.png" alt="TypingHero">
+                <div class="ov-text">
+                    <div class="ov-title">TypingHero</div>
+                    <div class="badge unity">Unity</div>
+                    <div class="ov-desc">学習型RPG</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-toytower" class="overview-item card-interactive">
+                <img src="images/toy-tower.png" alt="Toy Tower">
+                <div class="ov-text">
+                    <div class="ov-title">Toy Tower Battle</div>
+                    <div class="badge roblox">Roblox</div>
+                    <div class="ov-desc">ハッカソン (2位)</div>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="projects.html#engineering" class="btn-secondary" style="font-size:0.9rem; padding: 5px 15px; border-radius: 4px; text-decoration: none;">View Engineering Projects →</a>
+        </div>
+
+        <h3 class="category-title" style="font-size: 1.2rem; margin-top: 40px; border-bottom: 1px solid #eee;">UI/UX Design</h3>
+        <div class="overview-scroll">
+            <a href="projects.html#proj-uida" class="overview-item card-interactive">
+                <img src="images/icons/uida1.png" alt="UIDA">
+                <div class="ov-text">
+                    <div class="ov-title">Game UI Design</div>
+                    <div class="badge role">UI/UX</div>
+                    <div class="ov-desc">UIDAインターン作品</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-ca-task1" class="overview-item card-interactive">
+                <img src="images/ca_task1/01.png" alt="Game UI" style="object-fit: cover;">
+                <div class="ov-text">
+                    <div class="ov-title">Game UI (Task 1)</div>
+                    <div class="badge figma">Figma</div>
+                    <div class="ov-desc">世界観と没入UI</div>
+                </div>
+            </a>
+            <a href="projects.html#proj-ca-task2" class="overview-item card-interactive">
+                <img src="images/ca_task2/01.png" alt="App UI" style="object-fit: cover;">
+                <div class="ov-text">
+                    <div class="ov-title">WeaLog (Task 2)</div>
+                    <div class="badge role">App Design</div>
+                    <div class="ov-desc">天気×コーデアプリ</div>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center; margin-top:20px;">
+            <a href="projects.html#design" class="btn-secondary" style="font-size:0.9rem; padding: 5px 15px; border-radius: 4px; text-decoration: none;">View Design Projects →</a>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-grid">
+            <a href="achievements.html#achv-hacku" class="achv-card card-interactive">
+                <div class="achv-icon">🏆</div>
+                <div>
+                    <strong>OPEN HACK U OSAKA 2025</strong><br>
+                    <span style="font-size:0.9rem; color:#666;">優秀賞 (2位) - Tabit</span>
+                </div>
+            </a>
+            <a href="achievements.html#achv-geekhaku" class="achv-card card-interactive">
+                <div class="achv-icon">✉️</div>
+                <div>
+                    <strong>技育博2025</strong><br>
+                    <span style="font-size:0.9rem; color:#666;">企業招待・技術書贈呈</span>
+                </div>
+            </a>
+            <a href="achievements.html#achv-geekhack" class="achv-card card-interactive">
+                <div class="achv-icon">🥉</div>
+                <div>
+                    <strong>技育ハッカソン2024 vol.23</strong><br>
+                    <span style="font-size:0.9rem; color:#666;">3位 - TypingHero</span>
+                </div>
+            </a>
+            <a href="achievements.html#achv-utv" class="achv-card card-interactive">
+                <div class="achv-icon">🥈</div>
+                <div>
+                    <strong>UT-virtual賞</strong><br>
+                    <span style="font-size:0.9rem; color:#666;">2位 - おもちゃタワーバトル3D</span>
+                </div>
+            </a>
+        </div>
+        <div style="text-align:center; margin-top:20px;">
+
+            <a href="achievements.html" class="btn-secondary" style="font-size:0.9rem; padding: 5px 15px; border-radius: 4px; text-decoration: none;">View Design Projects →</a>
+        </div>
+    </section>
+
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>ご連絡・制作物の確認はこちらから：</p>
-        <ul class="subsection-list">
-            <li><strong>メール：</strong><a href="mailto:tanashu3@gmail.com">tanashu3@gmail.com</a></li>
-            <li><strong>GitHub：</strong><a href="https://github.com/tanashu3" target="_blank" rel="noopener noreferrer">github.com/tanashu3</a></li>
-        </ul>
+        <h2 class="section-title">Contact</h2>
+        <p style="margin-bottom:20px;">制作物の詳細やコードの確認は以下よりお願いいたします。</p>
+        <div style="display:flex; gap:20px;">
+            <a href="mailto:tanashu3@gmail.com" class="btn-primary" style="text-decoration:none; padding:10px 20px;">Email</a>
+            <a href="https://github.com/tanashu3" target="_blank" class="btn-secondary" style="text-decoration:none; padding:10px 20px;">GitHub</a>
+        </div>
     </section>
 
-    <!-- フッター -->
     <footer>
-        <p>© 2025 多那瀬周</p>
+        <p style="text-align:center; margin-top:50px; color:#888;">© 2025 Shu Tanase</p>
     </footer>
+
+    <div id="global-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close-btn" aria-label="閉じる">×</button>
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <div id="hidden-content" style="display: none;">
+
+        <article class="project-card" id="exp-moze">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">株式会社moze</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Roblox Intern</span>
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Planning</span>
+                        <span class="badge">Data Analysis</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-stairs" class="btn-primary">View Project: Stairs</a>
+                    <a href="https://www.moze.ai/" target="_blank" class="btn-secondary">Company HP</a>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/moze-logo.png" alt="moze logo" class="project-img img-contain">
+                </div>
+
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年〜現在（長期インターン）</p>
+                    <p><strong>役割：</strong> 企画・ディレクション・データ分析（3名チームのリーダー）</p>
+
+                    <h4>主な業務・成果</h4>
+                    <ul>
+                        <li><strong>新規タイトル開発：</strong>ホラー脱出ゲーム「Stairs」の企画からリリースまでを主導。</li>
+                        <li><strong>データドリブンな改善：</strong>リリース直後の同時接続者数伸び悩みに対し、「面白さを感じる前の離脱」を仮説として設定。プレイデータを分析してボトルネック（開始直後の導線・テンポ）を特定・改善した結果、同時接続者数を<strong>8倍に成長</strong>させました。</li>
+                        <li><strong>実績：</strong>改善による指標向上などが評価され、Roblox公式の注目作品枠 <strong>"Home Recommendation" に掲載</strong>されました。</li>
+                    </ul>
+
+                    <h4>制作レポート（社内提案資料）</h4>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <a href="docs/roblox_hit_analysis.pdf" target="_blank" class="btn-secondary" style="font-size: 0.85rem;">
+                            📄 Robloxヒット分析 (PDF)
+                        </a>
+                        <a href="docs/roblox_horror_analysis.pdf" target="_blank" class="btn-secondary" style="font-size: 0.85rem;">
+                            📄 ホラー演出分析 (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="exp-uida">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">CyberAgent UIDA</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Design Intern</span>
+                        <span class="badge">UI/UX Design</span>
+                        <span class="badge unity">Unity</span>
+                        <span class="badge">Figma</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" class="btn-secondary">Event Page</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/uida1.png" alt="UIDA Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida2.png" alt="UIDA Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年 夏（短期インターン）</p>
+                    <p><strong>概要：</strong> エンジニアとしてではなく「UIデザイナー」として参加。ゲームUIの情報設計から実装までを個人で完遂。</p>
+                    <h4>主な成果</h4>
+                    <ul>
+                        <li><strong>越境への挑戦：</strong>普段のエンジニア視点だけでなく、デザイナー視点での「手触り感」「視線誘導」を意識したUI構築を実践。</li>
+                        <li><strong>フィードバックループ：</strong>プロのデザイナーからのレビューを即座にUnity実装へ反映するサイクルを回し、ブラッシュアップの速度と質を評価された。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="exp-cygames">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Cygames Summer Internship</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Engineer Intern</span>
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge">Team Dev</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://fresh.cygames.co.jp/internship/detail.html?engineer&summer" target="_blank" class="btn-secondary">Internship Info</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/cygames.png" alt="Cygames logo" class="project-img img-contain">
+                </div>
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年 夏（短期インターン）</p>
+                    <p><strong>コース：</strong> エンジニアコース</p>
+                    <h4>主な成果</h4>
+                    <ul>
+                        <li><strong>実務フローの習得：</strong>大規模ゲーム開発を想定した「要件整理 → 設計 → 実装 → 検証」という厳格な開発フローを体験。</li>
+                        <li><strong>評価ポイント：</strong>短期開発課題において、可読性の高いコード実装力と、チーム開発を円滑に進めるコミュニケーション能力が高く評価された。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-stairs">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Stairs</h3>
+                    <div class="tech-stack">
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Lua</span>
+                        <span class="badge role">Direction</span>
+                        <span class="badge role">Game Design</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.roblox.com/ja/games/123132618690523/Stairs" target="_blank" class="btn-primary">Play Game</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/stairs1.png" alt="Stairs Icon" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs2.png" alt="Stairs Screen 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs3.png" alt="Stairs Screen 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs4.png" alt="Stairs Screen 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>怪異が出現する「階段（危険）」と「フロア（安全）」を行き来しながら最上階を目指すホラー脱出ゲーム。株式会社mozeのインターンにて企画・開発。</p>
+                    <h4>Game Cycle & Design</h4>
+                    <ul>
+                        <li><strong>緊張と緩和の設計：</strong>「階段＝薄暗く狭い危険地帯」「フロア＝生活感のある安全地帯」と役割を明確化し、プレイヤーの感情曲線をコントロール。</li>
+                        <li><strong>空間演出：</strong>RobloxのLighting機能を駆使し、古びたアパートの「不気味さ」と「懐かしさ」を同居させたレベルデザイン。</li>
+                    </ul>
+                    <h4>担当領域</h4>
+                    <ul>
+                        <li><strong>企画・ディレクション：</strong>3名チームのリーダーとして要件定義からリリースまでを主導。</li>
+                        <li><strong>運用改善：</strong>リリース後のユーザー行動データを分析し、難易度調整や離脱ポイントの改善を実施。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-shockhold">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">ShockHold</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge">VR</span>
+                        <span class="badge">Blender</span>
+                        <span class="badge role">Procedural Generation</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://dyecon.github.io/shockHold/" target="_blank" class="btn-secondary">Website</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/shockhold1.png" alt="ShockHold 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/shockhold2.png" alt="ShockHold 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/shockhold3.png" alt="ShockHold 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                    <div style="margin-top: 15px;">
+                        <p style="margin-bottom: 5px; font-size: 0.9rem;"><strong>体験動画 vol2.0.0（5月祭展示）</strong></p>
+                        <div style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; border: 1px solid #eee;">
+                            <iframe src="https://www.youtube.com/embed/7N8qsHZpClg?rel=0" title="体験動画 vol2.0.0" width="100%" height="100%" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>4人チームで制作した、「夢中になれる射撃体験」を追求したVRシューティングゲーム。学園祭での展示にて好評を博しました。</p>
+                    <h4>Key Challenges & Solutions</h4>
+                    <ul>
+                        <li><strong>飽きさせない地形生成：</strong>固定マップによるマンネリ化や待機列からのネタバレを防ぐため、プレイごとに地形が変わる自動生成を実装。難易度（Easy/Hard）で複雑度が変化する仕組みも導入しました。</li>
+                        <li><strong>VR酔いの解消（UI）：</strong>視点移動とUIのズレによる酔いを防ぐため、UIが視線に「ゆっくり追従する」挙動を考案・実装。現実の感覚に近づけることで、没入感を維持しつつ酔いを大幅に軽減しました。</li>
+                    </ul>
+                    <h4>Implementation & Growth</h4>
+                    <p>これらの機能を可読性の高い500行のコードに凝縮して実装。展示会でのアンケート結果を基に改善を続ける中で、ユーザーの反応を分析しプロダクトを磨き上げる楽しさを学びました。</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-tabit">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Tabit / Tabitat</h3>
+                    <div class="tech-stack">
+                        <span class="badge js">JavaScript</span>
+                        <span class="badge">Chrome Extension API</span>
+                        <span class="badge role">UI/UX Design</span>
+                        <span class="badge gold">Award Winner</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln" target="_blank" class="btn-primary">Chrome Store</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/tabit1.png" alt="Tabit 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/tabit2.png" alt="Tabit 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/tabit3.png" alt="Tabit 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>2人チームで制作したChrome拡張機能。開発中の検索で増えすぎたタブを自動で整理し、エンジニアの作業効率を向上させるタブマネージャーです。</p>
+                    <h4>Key Features & Implementation</h4>
+                    <ul>
+                        <li><strong>作業効率化（自動分類）：</strong>内容・キーワードに加え「ページ滞在時間（関心度）」を考慮してタブを自動グループ化するロジックを実装。独学のJavaScript（約600行）で構築し、手動整理の手間を削減しました。</li>
+                        <li><strong>直感的な操作性（UI/UX）：</strong>説明書なしで使えるよう、ドラッグ＆ドロップでの直感的な並べ替えや、ホバー・モード切替時の視覚的フィードバック（拡大、色変化）を徹底し、学習コストを最小化しました。</li>
+                    </ul>
+                    <h4>Achievements & Growth</h4>
+                    <p>「OPEN HACK U OSAKA 2025」にて優秀賞（全体2位）を受賞し、「技育博2025」でも高く評価されました。自身の課題を技術で解決し、同じ悩みを持つ多くの人へ価値を届ける面白さを実感しました。</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-typinghero">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">TypingHero</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge role">Solo Dev</span>
+                        <span class="badge bronze">3rd Place</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://play.unity.com/ja/games/b9aa9478-fca8-4a03-ba26-d3dc4d3b400a/typinghero" target="_blank" class="btn-primary">Play Unity</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/typing-hero1.png" alt="TypingHero 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/typing-hero2.png" alt="TypingHero 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/typing-hero3.png" alt="TypingHero 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>タイピング精度が攻撃演出とダメージに直結する、学習型2D横スクロールRPG。ハッカソン後に個人で企画・実装を継続。</p>
+                    <h4>Game Logic & Learning</h4>
+                    <ul>
+                        <li><strong>適応型難易度調整：</strong>プレイヤーの入力ログを解析し、苦手なキーや文字列の出現頻度を動的に調整するアルゴリズムを実装。</li>
+                        <li><strong>Feedback Loop：</strong>「正確な入力 → 派手なエフェクト → 大ダメージ」という即時フィードバックにより、学習のモチベーションをゲーム的に維持させる設計。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-toytower">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">おもちゃタワーバトル3D</h3>
+                    <div class="tech-stack">
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Lua</span>
+                        <span class="badge silver">2nd Place</span>
+                        <span class="badge">Hackathon (8h)</span>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://www.roblox.com/ja/games/78996187287078/3D" target="_blank" class="btn-primary">Play Game</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/toy-tower.png" alt="Toy Tower Battle" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>「プレイヤー自身が積み重なる」カジュアル対戦パズル。株式会社ambr主催のRobloxハッカソン（制作時間8時間）にて2位受賞。</p>
+                    <h4>Technical & Design Constraints</h4>
+                    <ul>
+                        <li><strong>物理演算の制御：</strong>RobloxのPhysics Serviceを利用し、アバターをラグドール化して積み上げる際の摩擦や重心を調整。「崩れそうで崩れない」絶妙な挙動を実現。</li>
+                        <li><strong>モバイル最適化：</strong>多数のプレイヤー（オブジェクト）が重なり合う負荷の高い状況でも、スマホで快適に動作するよう描画処理を軽量化。</li>
+                    </ul>
+                    <h4>評価ポイント</h4>
+                    <ul>
+                        <li><strong>直感的なゲーム性：</strong>説明不要でルールが伝わる「わかりやすさ（Robloxらしさ）」と、毎ターン形状が変わるアバターが積み上がる「カオスな見た目」が評価された。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-uida">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Game UI Design (UIDA)</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge role">UI/UX Design</span>
+                        <span class="badge">uGUI</span>
+                        <span class="badge">Figma</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" class="btn-secondary">Event Info</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/uida-p1.png" alt="UIDA Home" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p3.png" alt="UIDA Battle 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p4.png" alt="UIDA Battle 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p7.png" alt="UIDA Cut-in" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>CyberAgent UIDAインターンシップ作品。エンジニア視点を活かし、実装（Unity/uGUI）までを一人で完遂したゲームUIデザイン。</p>
+                    <h4>Design Highlights</h4>
+                    <ul>
+                        <li><strong>3DモデルのUI統合：</strong>ホーム画面にて、2D UIの中に3Dキャラクターモデルを配置。その一部をボタンとして機能させることで、情報の優先度を直感的に伝達。</li>
+                        <li><strong>手触り感の実装：</strong>ボタン押下時の微細なスケール変化やSEのタイミングをコードで制御し、心地よい操作感（Juiciness）を追求。</li>
+                    </ul>
+                    <h4>制作プロセス</h4>
+                    <ul>
+                        <li>Figmaによるワイヤーフレーム・モックアップ作成から、Unityでのアニメーション実装までを一貫して担当。</li>
+                        <li>メンター（プロデザイナー）からのフィードバックを即座に実装へ反映する高速な改善サイクルを実践。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-ca-task1">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Game UI Design (Selection Task 1)</h3>
+                    <div class="tech-stack">
+                        <span class="badge figma">Figma</span>
+                        <span class="badge ai">Illustrator</span>
+                        <span class="badge ps">Photoshop</span>
+                        <span class="badge role">UI Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/ca_task1/01.png" alt="Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/02.png" alt="Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/03.png" alt="Slide 3" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/04.png" alt="Slide 4" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/05.png" alt="Slide 5" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/06.png" alt="Slide 6" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/07.png" alt="Slide 7" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/08.png" alt="Slide 8" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/09.png" alt="Slide 9" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/10.png" alt="Slide 10" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>CyberAgent デザイナー選考課題にて制作したゲームUIデザイン。インターンシップでの経験を活かし、ツール習得からブラッシュアップまでを2週間で完遂しました。</p>
+                    <h4>Design Highlights & Analysis</h4>
+                    <ul>
+                        <li>
+                            <strong>Home: Diegetic UI（没入型UI）の採用</strong><br>
+                            既存の「ボタンを並べるだけのUI」ではなく、キャラクターの持ち物（本や道具など）をボタンとして機能させるデザインを構築。
+                            これにより、前回の3D制作時に評価された「キャラクターとの疑似的なコミュニケーション体験」を、2DのUI画面においても損なうことなく再現しました。
+                        </li>
+                        <li>
+                            <strong>Battle: 空間演出としての背景ギミック</strong><br>
+                            プレイヤーの後方視点（TPS視点）を採用して臨場感を演出。さらに、ボス登場時に「背景にある時計塔の窓を突き破って現れる」という演出を導入。
+                            背景を単なる静止画として扱わず、戦闘の展開と連動する「ステージギミック」として機能させることで、画面全体を使った没入感を生み出しました。
+                        </li>
+                    </ul>
+                    <h4>Tools & Skills</h4>
+                    <ul>
+                        <li><strong>Graphic Design (Ps/Ai):</strong> スチームパンクの世界観に合わせた質感（真鍮、革、ガラス）の表現とアセット作成。</li>
+                        <li><strong>Rapid Prototyping:</strong> 2週間という短期間でFigma、Illustrator、Photoshopを連携させた実務的なワークフローを確立。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-ca-task2">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Smartphone App Design (Selection Task 2) - "WeaLog"</h3>
+                    <div class="tech-stack">
+                        <span class="badge figma">Figma</span>
+                        <span class="badge ai">Illustrator</span>
+                        <span class="badge ps">Photoshop</span>
+                        <span class="badge role">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/ca_task2/01.png" alt="WeaLog Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/02.png" alt="WeaLog Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/03.png" alt="WeaLog Slide 3" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/04.png" alt="WeaLog Slide 4" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/05.png" alt="WeaLog Slide 5" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/06.png" alt="WeaLog Slide 6" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/07.png" alt="WeaLog Slide 7" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/08.png" alt="WeaLog Slide 8" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/09.png" alt="WeaLog Slide 9" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/10.png" alt="WeaLog Slide 10" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>「天気でつながる、わたしの1日コーデ記録」をコンセプトにしたスマホアプリのUI/UXデザイン。「今日何着よう？」という実用的な悩みに対し、日記（記録）という情緒的な価値を掛け合わせた提案です。</p>
+                    <h4>UX Concept: 実用性 × 感情性</h4>
+                    <ul>
+                        <li><strong>課題解決（Utility）：</strong>気温や天候に合わせて、その場所に最適なコーディネートを提案。「寒いかな？」という毎朝の不安を解消します。</li>
+                        <li><strong>情緒的価値（Emotion）：</strong>単なるツールで終わらせず、その日の服装と思い出を「カード」としてコレクションする楽しみ（Diary）や、SNSとしての共有性（Empathy）を設計の中心に据えました。</li>
+                    </ul>
+                    <h4>UI Design Highlights</h4>
+                    <ul>
+                        <li><strong>Card UI Metaphor：</strong>毎日のコーデを「トレーディングカード」のように見せるデザインを採用。付箋（タグ）を用いた情報整理で、親しみやすさと視認性を両立しました。</li>
+                        <li><strong>Information Architecture：</strong>画面上部に天気情報（気温・降水確率）、下部にメインのコーデカードを配置。ロケーション（京都・東京・沖縄など）をスワイプで切り替える直感的な操作性を実現しています。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-hacku">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">OPEN HACK U OSAKA 2025</h3>
+                    <div class="tech-stack">
+                        <span class="badge gold">優秀賞 (2位)</span>
+                        <span class="badge">Tabit</span>
+                        <span class="badge">Team Dev</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-tabit" class="btn-primary">View Project: Tabit</a>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/achievements/hacku_thumb.png" alt="Hack U サムネイル" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_presen.png" alt="発表の様子" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_award.png" alt="授賞式" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/achievements/hacku_group.png" alt="集合写真" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※スライドして当日の様子をご覧いただけます</p>
+                </div>
+
+                <div class="project-info">
+                    <p><strong>受賞名：</strong> 優秀賞（全体2位）</p>
+                    <p><strong>作品：</strong> Tabit (Chrome Extension)</p>
+
+                    <h4>評価ポイント</h4>
+                    <ul>
+                        <li><strong>技術力と完成度：</strong>Chrome拡張機能としてのAPI活用技術と、バグの少ない高い完成度。</li>
+                        <li><strong>プレゼンテーション：</strong>課題提起から解決策提示までのストーリー構成と、デモのスムーズさ。</li>
+                    </ul>
+
+                    <button class="toggle-details" aria-expanded="false" aria-controls="hacku-details">詳細エピソード</button>
+                    <div id="hacku-details" class="project-details" style="display:none;">
+                        <p>審査員の方々からは「既存のタブ管理ツールと比べてもUXが直感的で、すぐにでも使いたい」とのコメントを頂きました。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-geekhaku">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">技育博 2025</h3>
+                    <div class="tech-stack">
+                        <span class="badge award">企業賞・招待</span>
+                        <span class="badge">Tabit</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-tabit" class="btn-primary">View Project: Tabit</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/geekhaku_thumb.png" alt="技育博" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong> エンジニア学生のための技術展示会「技育博」に出展。</p>
+                    <ul>
+                        <li>複数の企業様より「技術書」の贈呈を受けました。</li>
+                        <li>オフィス見学および懇親会へ招待いただきました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-geekhack">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">技育ハッカソン 2024 vol.23</h3>
+                    <div class="tech-stack">
+                        <span class="badge bronze">3位</span>
+                        <span class="badge">TypingHero</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-typinghero" class="btn-primary">View Project: TypingHero</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/geekhack_thumb.png" alt="技育ハッカソン" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>受賞名：</strong> チーム開発部門 3位</p>
+                    <p><strong>作品：</strong> TypingHero (Unity RPG)</p>
+                    <ul>
+                        <li>ハッカソン期間内での実装完遂力と、ゲーム×学習を組み合わせたコンセプトが評価されました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="achv-utv">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Robloxハッカソン (ambr主催)</h3>
+                    <div class="tech-stack">
+                        <span class="badge silver">2位 (UT-virtual賞)</span>
+                        <span class="badge">おもちゃタワーバトル3D</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-toytower" class="btn-primary">View Project: Toy Tower</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/achievements/utv_thumb.png" alt="UT-virtual賞" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong> 株式会社ambr主催のサークル内ハッカソンにて受賞。</p>
+                    <ul>
+                        <li>Robloxの物理演算を活かした「自分が積み重なる」というユニークなゲーム性が評価されました。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </div>
 
     <script src="js/main.js"></script>
 </body>
-    </html>
+</html>
