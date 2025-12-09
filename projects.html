@@ -1,378 +1,390 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | 多那瀬周</title>
+    <title>Projects | 多那瀬周 Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <nav class="navbar">
+            <a href="index.html" class="nav-brand">Shu Tanase</a>
             <ul class="nav-list">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#overview">Index</a></li>
-                <li><a href="index.html#achievements">Achievements</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="experience.html">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="projects.html" class="current">Projects</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Projects -->
     <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2 class="section-title">Projects</h2>
 
-        <!-- NEW: Stairs (Mozeでリリース) -->
-        <div class="project-card" id="proj-stairs">
-            <h3 class="project-title">Stairs（Roblox | ホラー脱出）</h3>
-
-            <!-- Tabitと同形式の3枚スライダー -->
-            <div class="image-slider image-slider--narrow" aria-label="Stairs スクリーンショットスライダー">
-                <div class="slider-container">
-                    <img src="images/stairs1.png" alt="Stairs ゲームアイコン" class="project-img" loading="lazy" />
-                    <img src="images/stairs2.png" alt="Stairs ゲーム内スクリーンショット 1" class="project-img" loading="lazy" />
-                    <img src="images/stairs3.png" alt="Stairs ゲーム内スクリーンショット 2" class="project-img" loading="lazy" />
-                    <img src="images/stairs4.png" alt="Stairs ゲーム内スクリーンショット 3" class="project-img" loading="lazy" />
+        <h3 id="engineering" class="category-title">Engineering & Game Development</h3>
+        <article class="project-card" id="proj-stairs">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Stairs</h3>
+                    <div class="tech-stack">
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Lua</span>
+                        <span class="badge role">Direction</span>
+                        <span class="badge role">Game Design</span>
+                    </div>
                 </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
-            </div>
-
-            <button class="toggle-details" aria-expanded="false" aria-controls="stairs-details">詳細を見る</button>
-
-            <div id="stairs-details" class="project-details">
-                <!-- 1. 概要 -->
-                <div class="subsection">
-                    <h4>ゲーム概要</h4>
-                    <ul class="subsection-list">
-                        <li><strong>タイトル：</strong>Stairs</li>
-                        <li><strong>ジャンル：</strong>ホラー脱出ゲーム</li>
-
-                    </ul>
-                </div>
-
-                <!-- 2. サイクル＆進行 -->
-                <div class="subsection">
-                    <h4>ゲームサイクルとステージ進行</h4>
-                    <ul class="subsection-list">
-                        <li><strong>危険地帯（階段）：</strong>怪異が出現する階段を上り、上階のフロア（安全地帯）を目指す。</li>
-                        <li><strong>安全地帯（フロア）：</strong>最初の到達者が出ると安全化。全員到達で怪異は消滅し、次ステージへ。</li>
-                        <li><strong>構成：</strong>1→2階はチュートリアル（怪異なし）／2→8階がメイン。合計8つの「階段」を攻略。</li>
-                    </ul>
-                </div>
-
-                <!-- 3. エリアデザイン -->
-                <div class="subsection">
-                    <h4>エリアデザイン</h4>
-                    <ul class="subsection-list">
-                        <li><strong>世界観：</strong>全体を「古びたアパート」で統一。</li>
-                        <li><strong>ロビー：</strong>不気味で広いエントランス空間。</li>
-                        <li><strong>フロア（安全地帯）：</strong>生活感の残る古びた風景で、親近感と不安を同居。</li>
-                        <li><strong>階段（危険地帯）：</strong>薄暗く圧迫感のある導線空間。</li>
-                        <li><strong>エンディング（8階）：</strong>解放と達成の演出。封鎖されていたエレベーターが解放され、ロビーへ帰還可能に。</li>
-                    </ul>
-                </div>
-
-
-
-                <p class="note-link">▶ Roblox公開ページ：<a href="https://www.roblox.com/ja/games/123132618690523/Stairs" target="_blank" rel="noopener noreferrer">Stairs</a></p>
-            </div>
-        </div>
-
-        <div class="project-card" id="proj-uida">
-            <h3 class="project-title">UIDA：ゲームUIデザイン（個人制作）</h3>
-            <div class="image-slider image-slider--narrow" aria-label="UIDA 作品スクリーンショット">
-                <div class="slider-container">
-                    <img src="images/uida-p1.png" alt="UIDA 作品 ホーム画面" class="project-img" loading="lazy" />
-                    <img src="images/uida-p3.png" alt="UIDA 作品 バトル画面2" class="project-img" loading="lazy" />
-                    <img src="images/uida-p4.png" alt="UIDA 作品 バトル画面3" class="project-img" loading="lazy" />
-                    <img src="images/uida-p5.png" alt="UIDA 作品 バトル画面4" class="project-img" loading="lazy" />
-                    <img src="images/uida-p6.png" alt="UIDA 作品 バトル画面5" class="project-img" loading="lazy" />
-                    <img src="images/uida-p7.png" alt="UIDA 作品 スキルカットイン" class="project-img" loading="lazy" />
-                </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
-            </div>
-            <button class="toggle-details">詳細を見る</button>
-            <div class="project-details">
-                <div class="subsection">
-                    <h4>作品ポイント</h4>
-                    <ul class="subsection-list">
-                        <li>共通テーマのもと、<strong>個人でUI一式を設計・制作</strong>（ワイヤー→モック→アセット→プロト実装）。</li>
-                        <li>チームに相談しながら意思決定し、<strong>メンターのフィードバック</strong>を反映して改善サイクルを高速化。</li>
-                        <li>エンジニア経験を活かし、<strong>実装想定のレイアウト・遷移</strong>まで踏み込んで設計。</li>
-                        <li>
-                            <strong>ホーム画面では3DモデルをUIに統合</strong>。2D UIの中に3Dモデルを配置し、その一部をボタン化することで、<br>
-                            他のボタンより重要であることを直感的に伝える工夫を行った。
-                        </li>
-                    </ul>
+                <div class="project-links">
+                    <a href="https://www.roblox.com/ja/games/123132618690523/Stairs" target="_blank" class="btn-primary">Play Game</a>
                 </div>
             </div>
-        </div>
-
-        <!-- ShockHold -->
-        <div class="project-card" id="proj-shockhold">
-            <h3 class="project-title">ShockHold（Unity|VRシューティングゲーム）</h3>
-
-            <div class="image-slider" aria-label="ShockHold スクリーンショットスライダー">
-                <div class="slider-container">
-                    <img src="images/shockhold1.png" alt="ShockHold スクリーンショット 1" class="project-img" loading="lazy" />
-                    <img src="images/shockhold2.png" alt="ShockHold スクリーンショット 2" class="project-img" loading="lazy" />
-                    <img src="images/shockhold3.png" alt="ShockHold スクリーンショット 3" class="project-img" loading="lazy" />
-                </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
-            </div>
-
-            <button class="toggle-details" aria-expanded="false" aria-controls="shockhold-details">詳細を見る</button>
-
-            <div id="shockhold-details" class="project-details">
-                <div class="subsection">
-                    <h4>概要：</h4>
-                    <p>
-                        「Shock Hold」は、4人チームで制作したVR専用の3Dシューティングゲーム。
-                        空・海・陸のあらゆる方向から押し寄せる敵から金庫を守るゲームで、
-                        プレイヤーは自ら銃を手に取り、現実の身体を動かしながら臨場感ある戦闘を体験できる。<br>
-                        [担当範囲]<br>
-                        難易度ごとのステージ自動生成機能、グレネードランチャーによる地形破壊機能(Unity(C#), Blender)
-                    </p>
-                </div>
-
-                <div class="features">
-                    <h4>特徴：</h4>
-                    <ul class="features-list">
-                        <li>
-                            <strong>VRならではの臨場感と操作感：</strong>
-                            実際のエアガンをコントローラーとして用い、発射時の反動を光センサーで検知してトリガーに連動させることで、視覚・触覚を組み合わせたリアルな射撃体験を実現。
-                        </li>
-                        <li>
-                            <strong>難易度選択とバイオーム変化(ステージの自動生成)：</strong>
-                            <ul>
-                                <li>Easyモード：開放的な草原ステージ。敵は赤いアウトラインで常に見えるため、初心者や子どもでも遊びやすい。</li>
-                                <li>Hardモード：ジャングルのように暗く複雑な地形が生成され、敵の接近が分かりづらく緊張感が高まる。</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>展示・実績：</h4>
-                    <ul class="subsection-list">
-                        <li><strong>東京大学五月祭</strong>にて1プレイ500円で出展、多数の体験者を集めアンケートも実施。</li>
-                        <li>現在もフィードバックを活かし、<strong>次回展示（駒場祭）に向けて開発を継続中。</strong></li>
-                        <li>▶公式サイト：<a href="https://dyecon.github.io/shockHold/" target="_blank" rel="noopener noreferrer">ShockHold公式ページ</a></li>
-                    </ul>
-                    <div class="subsection">
-                        <h4>デモ動画：</h4>
-                        <div class="video-row">
-                            <div class="video-embed">
-                                <p><strong>体験動画 vol2.0.0（5月祭展示）</strong></p>
-                                <iframe src="https://www.youtube.com/embed/7N8qsHZpClg"
-                                        title="体験動画 vol2.0.0"
-                                        loading="lazy"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
-                            </div>
-                            <div class="video-embed">
-                                <p><strong>5月祭用アテンド解説動画</strong></p>
-                                <iframe src="https://www.youtube.com/embed/ZhDc_zUdXNE"
-                                        title="アテンド解説動画"
-                                        loading="lazy"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen>
-                                </iframe>
-                            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/stairs1.png" alt="Stairs Icon" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs2.png" alt="Stairs Screen 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs3.png" alt="Stairs Screen 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/stairs4.png" alt="Stairs Screen 3" class="project-img" style="flex-shrink:0; width:100%;">
                         </div>
-                        <p class="note-link">
-                            途中経過：<a href="https://youtu.be/yj_4LSQL_9s" target="_blank" rel="noopener noreferrer">体験動画 vol1.1.0（サークル内発表）</a>
-                        </p>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>怪異が出現する「階段（危険）」と「フロア（安全）」を行き来しながら最上階を目指すホラー脱出ゲーム。株式会社mozeのインターンにて企画・開発。</p>
+                    <h4>Game Cycle & Design</h4>
+                    <ul>
+                        <li><strong>緊張と緩和の設計：</strong>「階段＝薄暗く狭い危険地帯」「フロア＝生活感のある安全地帯」と役割を明確化し、プレイヤーの感情曲線をコントロール。</li>
+                        <li><strong>空間演出：</strong>RobloxのLighting機能を駆使し、古びたアパートの「不気味さ」と「懐かしさ」を同居させたレベルデザイン。</li>
+                    </ul>
+                    <h4>担当領域</h4>
+                    <ul>
+                        <li><strong>企画・ディレクション：</strong>3名チームのリーダーとして要件定義からリリースまでを主導。</li>
+                        <li><strong>運用改善：</strong>リリース後のユーザー行動データを分析し、難易度調整や離脱ポイントの改善を実施。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-shockhold">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">ShockHold</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge">VR</span>
+                        <span class="badge">Blender</span>
+                        <span class="badge role">Procedural Generation</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://dyecon.github.io/shockHold/" target="_blank" class="btn-secondary">Website</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/shockhold1.png" alt="ShockHold 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/shockhold2.png" alt="ShockHold 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/shockhold3.png" alt="ShockHold 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                    <div style="margin-top: 15px;">
+                        <p style="margin-bottom: 5px; font-size: 0.9rem;"><strong>体験動画 vol2.0.0（5月祭展示）</strong></p>
+                        <div style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; border: 1px solid #eee;">
+                            <iframe src="https://www.youtube.com/embed/7N8qsHZpClg?rel=0" title="体験動画 vol2.0.0" width="100%" height="100%" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>4人チームで制作した、「夢中になれる射撃体験」を追求したVRシューティングゲーム。学園祭での展示にて好評を博しました。</p>
+                    <h4>Key Challenges & Solutions</h4>
+                    <ul>
+                        <li><strong>飽きさせない地形生成：</strong>固定マップによるマンネリ化や待機列からのネタバレを防ぐため、プレイごとに地形が変わる自動生成を実装。難易度（Easy/Hard）で複雑度が変化する仕組みも導入しました。</li>
+                        <li><strong>VR酔いの解消（UI）：</strong>視点移動とUIのズレによる酔いを防ぐため、UIが視線に「ゆっくり追従する」挙動を考案・実装。現実の感覚に近づけることで、没入感を維持しつつ酔いを大幅に軽減しました。</li>
+                    </ul>
+                    <h4>Implementation & Growth</h4>
+                    <p>これらの機能を可読性の高い500行のコードに凝縮して実装。展示会でのアンケート結果を基に改善を続ける中で、ユーザーの反応を分析しプロダクトを磨き上げる楽しさを学びました。</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-tabit">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Tabit / Tabitat</h3>
+                    <div class="tech-stack">
+                        <span class="badge js">JavaScript</span>
+                        <span class="badge">Chrome Extension API</span>
+                        <span class="badge role">UI/UX Design</span>
+                        <span class="badge gold">Award Winner</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln" target="_blank" class="btn-primary">Chrome Store</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/tabit1.png" alt="Tabit 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/tabit2.png" alt="Tabit 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/tabit3.png" alt="Tabit 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>2人チームで制作したChrome拡張機能。開発中の検索で増えすぎたタブを自動で整理し、エンジニアの作業効率を向上させるタブマネージャーです。</p>
+                    <h4>Key Features & Implementation</h4>
+                    <ul>
+                        <li><strong>作業効率化（自動分類）：</strong>内容・キーワードに加え「ページ滞在時間（関心度）」を考慮してタブを自動グループ化するロジックを実装。独学のJavaScript（約600行）で構築し、手動整理の手間を削減しました。</li>
+                        <li><strong>直感的な操作性（UI/UX）：</strong>説明書なしで使えるよう、ドラッグ＆ドロップでの直感的な並べ替えや、ホバー・モード切替時の視覚的フィードバック（拡大、色変化）を徹底し、学習コストを最小化しました。</li>
+                    </ul>
+                    <h4>Achievements & Growth</h4>
+                    <p>「OPEN HACK U OSAKA 2025」にて優秀賞（全体2位）を受賞し、「技育博2025」でも高く評価されました。自身の課題を技術で解決し、同じ悩みを持つ多くの人へ価値を届ける面白さを実感しました。</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-typinghero">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">TypingHero</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge role">Solo Dev</span>
+                        <span class="badge bronze">3rd Place</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://play.unity.com/ja/games/b9aa9478-fca8-4a03-ba26-d3dc4d3b400a/typinghero" target="_blank" class="btn-primary">Play Unity</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/typing-hero1.png" alt="TypingHero 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/typing-hero2.png" alt="TypingHero 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/typing-hero3.png" alt="TypingHero 3" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>タイピング精度が攻撃演出とダメージに直結する、学習型2D横スクロールRPG。ハッカソン後に個人で企画・実装を継続。</p>
+                    <h4>Game Logic & Learning</h4>
+                    <ul>
+                        <li><strong>適応型難易度調整：</strong>プレイヤーの入力ログを解析し、苦手なキーや文字列の出現頻度を動的に調整するアルゴリズムを実装。</li>
+                        <li><strong>Feedback Loop：</strong>「正確な入力 → 派手なエフェクト → 大ダメージ」という即時フィードバックにより、学習のモチベーションをゲーム的に維持させる設計。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-toytower">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">おもちゃタワーバトル3D</h3>
+                    <div class="tech-stack">
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Lua</span>
+                        <span class="badge silver">2nd Place</span>
+                        <span class="badge">Hackathon (8h)</span>
+                    </div>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://www.roblox.com/ja/games/78996187287078/3D" target="_blank" class="btn-primary">Play Game</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/toy-tower.png" alt="Toy Tower Battle" class="project-img">
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>「プレイヤー自身が積み重なる」カジュアル対戦パズル。株式会社ambr主催のRobloxハッカソン（制作時間8時間）にて2位受賞。</p>
+                    <h4>Technical & Design Constraints</h4>
+                    <ul>
+                        <li><strong>物理演算の制御：</strong>RobloxのPhysics Serviceを利用し、アバターをラグドール化して積み上げる際の摩擦や重心を調整。「崩れそうで崩れない」絶妙な挙動を実現。</li>
+                        <li><strong>モバイル最適化：</strong>多数のプレイヤー（オブジェクト）が重なり合う負荷の高い状況でも、スマホで快適に動作するよう描画処理を軽量化。</li>
+                    </ul>
+                    <h4>評価ポイント</h4>
+                    <ul>
+                        <li><strong>直感的なゲーム性：</strong>説明不要でルールが伝わる「わかりやすさ（Robloxらしさ）」と、毎ターン形状が変わるアバターが積み上がる「カオスな見た目」が評価された。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+
+        <h3 id="design" class="category-title" style="margin-top: 80px;">UI/UX Design</h3>
+
+        <article class="project-card" id="proj-uida">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Game UI Design (UIDA)</h3>
+                    <div class="tech-stack">
+                        <span class="badge unity">Unity</span>
+                        <span class="badge role">UI/UX Design</span>
+                        <span class="badge">uGUI</span>
+                        <span class="badge">Figma</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" class="btn-secondary">Event Info</a>
+                </div>
+            </div>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/uida-p1.png" alt="UIDA Home" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p3.png" alt="UIDA Battle 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p4.png" alt="UIDA Battle 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida-p7.png" alt="UIDA Cut-in" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
+                </div>
+                <div class="project-info">
+                    <p><strong>概要：</strong>CyberAgent UIDAインターンシップ作品。エンジニア視点を活かし、実装（Unity/uGUI）までを一人で完遂したゲームUIデザイン。</p>
+                    <h4>Design Highlights</h4>
+                    <ul>
+                        <li><strong>3DモデルのUI統合：</strong>ホーム画面にて、2D UIの中に3Dキャラクターモデルを配置。その一部をボタンとして機能させることで、情報の優先度を直感的に伝達。</li>
+                        <li><strong>手触り感の実装：</strong>ボタン押下時の微細なスケール変化やSEのタイミングをコードで制御し、心地よい操作感（Juiciness）を追求。</li>
+                    </ul>
+                    <h4>制作プロセス</h4>
+                    <ul>
+                        <li>Figmaによるワイヤーフレーム・モックアップ作成から、Unityでのアニメーション実装までを一貫して担当。</li>
+                        <li>メンター（プロデザイナー）からのフィードバックを即座に実装へ反映する高速な改善サイクルを実践。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card" id="proj-ca-task1">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Game UI Design (Selection Task 1)</h3>
+                    <div class="tech-stack">
+                        <span class="badge figma">Figma</span>
+                        <span class="badge ai">Illustrator</span>
+                        <span class="badge ps">Photoshop</span>
+                        <span class="badge role">UI Design</span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Tabit / Tabitat -->
-        <div class="project-card" id="proj-tabit">
-            <h3 class="project-title">Tabit・Tabitat（タブ自動整理ツール & 教育向け拡張webサイト)</h3>
-
-            <!-- 幅を個別指定（nth-of-type依存を廃止） -->
-            <div class="image-slider image-slider--narrow" aria-label="Tabit スクリーンショットスライダー">
-                <div class="slider-container">
-                    <img src="images/tabit1.png" alt="Tabit スクリーンショット 1" class="project-img" loading="lazy" />
-                    <img src="images/tabit2.png" alt="Tabit スクリーンショット 2" class="project-img" loading="lazy" />
-                    <img src="images/tabit3.png" alt="Tabit スクリーンショット 3" class="project-img" loading="lazy" />
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/ca_task1/01.png" alt="Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/02.png" alt="Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/03.png" alt="Slide 3" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/04.png" alt="Slide 4" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/05.png" alt="Slide 5" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/06.png" alt="Slide 6" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/07.png" alt="Slide 7" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/08.png" alt="Slide 8" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/09.png" alt="Slide 9" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task1/10.png" alt="Slide 10" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
                 </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
+                <div class="project-info">
+                    <p><strong>概要：</strong>CyberAgent デザイナー選考課題にて制作したゲームUIデザイン。インターンシップでの経験を活かし、ツール習得からブラッシュアップまでを2週間で完遂しました。</p>
+                    <h4>Design Highlights & Analysis</h4>
+                    <ul>
+                        <li>
+                            <strong>Home: Diegetic UI（没入型UI）の採用</strong><br>
+                            既存の「ボタンを並べるだけのUI」ではなく、キャラクターの持ち物（本や道具など）をボタンとして機能させるデザインを構築。
+                            これにより、前回の3D制作時に評価された「キャラクターとの疑似的なコミュニケーション体験」を、2DのUI画面においても損なうことなく再現しました。
+                        </li>
+                        <li>
+                            <strong>Battle: 空間演出としての背景ギミック</strong><br>
+                            プレイヤーの後方視点（TPS視点）を採用して臨場感を演出。さらに、ボス登場時に「背景にある時計塔の窓を突き破って現れる」という演出を導入。
+                            背景を単なる静止画として扱わず、戦闘の展開と連動する「ステージギミック」として機能させることで、画面全体を使った没入感を生み出しました。
+                        </li>
+                    </ul>
+                    <h4>Tools & Skills</h4>
+                    <ul>
+                        <li><strong>Graphic Design (Ps/Ai):</strong> スチームパンクの世界観に合わせた質感（真鍮、革、ガラス）の表現とアセット作成。</li>
+                        <li><strong>Rapid Prototyping:</strong> 2週間という短期間でFigma、Illustrator、Photoshopを連携させた実務的なワークフローを確立。</li>
+                    </ul>
+                </div>
             </div>
+        </article>
 
-            <button class="toggle-details" aria-expanded="false" aria-controls="tabit-details">詳細を見る</button>
-
-            <div id="tabit-details" class="project-details">
-                <div class="subsection">
-                    <h4>概要：</h4>
-                    <p>
-                        Tabit は、2人チームで開発した、開きすぎたタブを自動分類・グループ化し、整理状態を常に保つ Chrome 拡張。<br>
-                        作業中に増えがちなブラウザタブを、内容・キーワード・閲覧時間に基づいて分類し、
-                        ユーザーの思考を妨げずに最適な作業環境を提供する。<br>
-                        さらに教育機関や企業向けに展開した「Tabitat」ではタブの状態共有・管理・制御機能を備え、授業や業務の効率化を支援。<br>
-                        [担当範囲]<br>
-                        UI設計、Chromeの拡張機能のグループ化する機能全般、TabitatとTabit側で情報をやり取りする機構のTabit側を実装
-                    </p>
-                </div>
-
-                <div class="subsection">
-                    <h4>主な機能：</h4>
-                    <ul class="subsection-list">
-                        <li><strong>自動ジャンル分類＆グループ化：</strong>作業・調査・SNS などに応じてタブを自動整理し、グループ化。</li>
-                        <li><strong>ウィンドウを横断したタブ検索・統合機能：</strong>キーワード一致するタブを別ウィンドウからも検索し、1つのウィンドウにまとめて表示。</li>
-                        <li><strong>一覧からのタブ編集：</strong>Tabit上の一覧からタブを削除したり、ドラッグ＆ドロップで順番を移動可能。</li>
-                        <li><strong>TabitatによるTabitの機能拡張：</strong>教師 / 管理者によるタブ共有・同期・監視が可能なWeb連携型拡張</li>
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>【UI/UX面】でのこだわり：</h4>
-                    <p>
-                        直感的な操作性を追求し、普段ブラウザで行うタブ操作（ドラッグ＆ドロップでの移動や削除）をそのまま再現。さらに、ホバーで拡大するボタンやワンクリックで展開・折りたたみ可能な操作性を両立することで、ユーザーが説明なしでも直感的に使えることを目指しました。<br>
-                        この「慣れ親しんだ操作を新しい製品にも取り入れる」という思想は、AppleのHuman Interface Guidelinesなどを参考にしたもので、学習コストを下げ、快適な使用感に繋げました。
-                    </p>
-                </div>
-
-                <div class="subsection">
-                    <h4>実績・反響：</h4>
-                    <ul class="subsection-list">
-                        <li>OPEN HACK U OSAKA 2025 <strong>優秀賞（全体2位）</strong>受賞</li>
-                        <li>技育博2025 にて多数の企業から関心を獲得し、<strong>技術書の贈呈</strong>を受け、<strong>オフィス見学・懇親会にも招待</strong></li>
-                        <li>▶Chrome Web Store：<a href="https://chromewebstore.google.com/detail/glcipgmgjcfpdmmomflnhgenkkchlmln?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Tabitサイト</a></li>
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>デモ動画：</h4>
-                    <div class="demo-video">
-                        <iframe src="https://www.youtube.com/embed/FbF4foxe-ls"
-                                title="Tabit デモ動画"
-                                loading="lazy"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                        </iframe>
+        <article class="project-card" id="proj-ca-task2">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Smartphone App Design (Selection Task 2) - "WeaLog"</h3>
+                    <div class="tech-stack">
+                        <span class="badge figma">Figma</span>
+                        <span class="badge ai">Illustrator</span>
+                        <span class="badge ps">Photoshop</span>
+                        <span class="badge role">UI/UX Design</span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- TypingHero -->
-        <div class="project-card" id="proj-typinghero">
-            <h3 class="project-title">TypingHero（Unityゲーム）</h3>
-
-            <div class="image-slider" aria-label="TypingHero スクリーンショットスライダー">
-                <div class="slider-container">
-                    <img src="images/typing-hero1.png" alt="TypingHero スクリーンショット 1" class="project-img" loading="lazy" />
-                    <img src="images/typing-hero2.png" alt="TypingHero スクリーンショット 2" class="project-img" loading="lazy" />
-                    <img src="images/typing-hero3.png" alt="TypingHero スクリーンショット 3" class="project-img" loading="lazy" />
-                </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
-            </div>
-
-            <button class="toggle-details" aria-expanded="false" aria-controls="typinghero-details">詳細を見る</button>
-
-            <div id="typinghero-details" class="project-details">
-                <div class="subsection">
-                    <h4>概要：</h4>
-                    <p>
-                        タイピングで敵を倒しながら物語を進める、2D横スクロール形式の学習RPG。<br>
-                        ハッカソンでプロトタイプを4人チームで作成。大会後は個人で企画・実装・演出まで一貫して開発し、<br>快感と成長を両立させた学習体験を提供。<br>
-                        [担当範囲]<br>
-                        UI設計、バトルロジック、アニメーション演出（Unity / C#）
-                    </p>
-                </div>
-
-                <div class="subsection">
-                    <h4>特徴：</h4>
-                    <ul class="subsection-list">
-                        <li><strong>成功率に応じた攻撃演出とダメージ変化：</strong>正確な入力ほど攻撃演出が豪華になり、ダメージも増加。タイピングへの集中と達成感を高める設計。</li>
-                        <li><strong>入力傾向に応じた個別難易度：</strong>過去の入力精度から苦手な文字列を分析し、出現頻度を調整。プレイヤーに合った学習体験を実現。</li>
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>展示・実績：</h4>
-                    <ul class="subsection-list">
-                        <li>「技育ハッカソン2024 vol.23」3位入賞</li>
-                        <li>UIと学習性の融合が評価され、現在も一般公開に向けて継続開発中</li>
-                        <li>▶Unity Playで公開中: <a href="https://play.unity.com/ja/games/b9aa9478-fca8-4a03-ba26-d3dc4d3b400a/typinghero" target="_blank" rel="noopener noreferrer">Unity Play | TypingHero game</a></li>
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>デモ動画(大会用の紹介動画)：</h4>
-                    <div class="demo-video">
-                        <iframe src="https://www.youtube.com/embed/iV4nOJY4aY8"
-                                title="TypingHero 紹介動画"
-                                loading="lazy"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                        </iframe>
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/ca_task2/01.png" alt="WeaLog Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/02.png" alt="WeaLog Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/03.png" alt="WeaLog Slide 3" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/04.png" alt="WeaLog Slide 4" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/05.png" alt="WeaLog Slide 5" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/06.png" alt="WeaLog Slide 6" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/07.png" alt="WeaLog Slide 7" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/08.png" alt="WeaLog Slide 8" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/09.png" alt="WeaLog Slide 9" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/ca_task2/10.png" alt="WeaLog Slide 10" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
                     </div>
+                    <p style="font-size:0.8rem; color:#666; text-align:center; margin-top:5px;">※左右にスライドして資料をご覧いただけます</p>
                 </div>
-            </div>
-        </div>
-
-        <!-- おもちゃタワーバトル3D -->
-        <div class="project-card" id="proj-toytower">
-            <h3 class="project-title">おもちゃタワーバトル3D（Robloxハッカソン）</h3>
-
-            <img src="images/toy-tower.png" alt="おもちゃタワーバトル3D スクリーンショット" class="project-img" loading="lazy" />
-
-            <button class="toggle-details" aria-expanded="false" aria-controls="toy-details">詳細を見る</button>
-
-            <div id="toy-details" class="project-details">
-                <div class="subsection">
-                    <h4>概要：</h4>
-                    <p>
-                        「おもちゃタワーバトル3D」は、8時間で制作されたカジュアル対戦ゲームであり、<br><strong>プレイヤー自身が“積み上げられるおもちゃ”</strong>となってバランスを保ちながら
-                        順番に重なっていくユニークな作品である。<br>物理演算による崩壊リスクとターン制の戦略性を組み合わせ、最後まで崩さずに高得点を狙うことが勝利条件となる。<br>
-                        実装したいギミックや処理したいバグも多くあったが、<strong>制作時間が8時間</strong>と限られており、納得のいくクオリティには<br>仕上げきれなかった点が非常に悔しかった。<br>
-                        この経験を糧に、今後も引き続きRoblox開発に取り組み、より完成度の高い作品を目指していきたい。<br>
-                        [担当範囲]<br>
-                        ポイントによる各プレイヤーのランキング表示、ゲーム開始時のポイントの初期化
-                    </p>
-                </div>
-
-                <div class="subsection">
-                    <h4>特徴：</h4>
-                    <ul class="subsection-list">
-                        <li><strong>直感的な遊び方（ロブロックスらしさ）：</strong>操作説明なしでも理解できるゲーム設計。視覚的・物理的に結果が直感的に分かるため、子どもでも楽しめる。</li>
-                        <li><strong>ポップでカオスな空間演出：</strong>毎ターン形状がランダムで変わるプレイヤーが、部屋の中に積み上がっていく様子は、見た目も賑やかで盛り上がる。</li>
-                        <li><strong>携帯でも動く軽量設計：</strong>モバイル環境でも快適に動作するよう処理と描画を最適化。</li>
-                        <li><strong>ロビー＆マッチングの導線：</strong>ロビー → マッチングエリア → 積み上げエリアというシンプルで分かりやすい導線設計。</li>
+                <div class="project-info">
+                    <p><strong>概要：</strong>「天気でつながる、わたしの1日コーデ記録」をコンセプトにしたスマホアプリのUI/UXデザイン。「今日何着よう？」という実用的な悩みに対し、日記（記録）という情緒的な価値を掛け合わせた提案です。</p>
+                    <h4>UX Concept: 実用性 × 感情性</h4>
+                    <ul>
+                        <li><strong>課題解決（Utility）：</strong>気温や天候に合わせて、その場所に最適なコーディネートを提案。「寒いかな？」という毎朝の不安を解消します。</li>
+                        <li><strong>情緒的価値（Emotion）：</strong>単なるツールで終わらせず、その日の服装と思い出を「カード」としてコレクションする楽しみ（Diary）や、SNSとしての共有性（Empathy）を設計の中心に据えました。</li>
                     </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>実績：</h4>
-                    <ul class="subsection-list">
-                        <li>UT-virtual内で開催された、<strong>株式会社ambr主催のRobloxハッカソン</strong>にて <strong>2位（UT-virtual賞）</strong> を受賞。</li>
-                        <li>限られた制作時間内での完成度、ロブロックスらしさを意識した設計、新規性のあるシステムが高く評価された。</li>
-                        <li>▶実際にリリースしたゲームURL：<a href="https://www.roblox.com/ja/games/78996187287078/3D" target="_blank" rel="noopener noreferrer">「おもちゃタワーバトル3D」</a></li>
+                    <h4>UI Design Highlights</h4>
+                    <ul>
+                        <li><strong>Card UI Metaphor：</strong>毎日のコーデを「トレーディングカード」のように見せるデザインを採用。付箋（タグ）を用いた情報整理で、親しみやすさと視認性を両立しました。</li>
+                        <li><strong>Information Architecture：</strong>画面上部に天気情報（気温・降水確率）、下部にメインのコーデカードを配置。ロケーション（京都・東京・沖縄など）をスワイプで切り替える直感的な操作性を実現しています。</li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </article>
 
     </section>
 
-    <footer><p>© 2025 多那瀬周</p></footer>
     <script src="js/main.js"></script>
 </body>
 </html>
