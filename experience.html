@@ -1,125 +1,154 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience | 多那瀬周</title>
+    <title>Experience | 多那瀬周 Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- ヘッダー -->
     <header>
         <nav class="navbar">
+            <a href="index.html" class="nav-brand">Shu Tanase</a>
             <ul class="nav-list">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#overview">Index</a></li>
-                <li><a href="index.html#achievements">Achievements</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html" class="current">Experience</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- 自己紹介 -->
-    <!-- 経験 -->
     <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="project-card" id="exp-moze">
-            <h3 class="project-title">株式会社moze（Robloxゲーム開発インターン）</h3>
-            <img src="images/moze-logo.png" alt="mozeインターン" class="project-img" loading="lazy" />
+        <h2 class="section-title">Experience</h2>
 
-            <!-- アクセシビリティ属性を付与 -->
-            <button class="toggle-details" aria-expanded="false" aria-controls="moze-details">詳細を見る</button>
-
-            <div id="moze-details" class="project-details">
-                <div class="subsection">
-                    <h4>概要</h4>
-                    <p>
-                        Robloxの<strong>企画〜ディレクション</strong>を担当（3名体制）。要件定義→タスク設計→レビューまで一貫して推進。<br>
-                        自分主導のタイトル<strong>「Stairs」</strong>をリリースし、現在はダッシュボードで<strong>Retention</strong>（Day1/Day7など）や行動データを見ながら、
-                        <strong>レベル設計・難易度・演出のアップデート</strong>に継続的に携わっています。<br>
-                        ▶<a href="https://www.moze.ai/" target="_blank" rel="noopener noreferrer">株式会社mozeホームページ</a>
-                    </p>
+        <article class="project-card" id="exp-moze">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">株式会社moze</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Roblox Intern</span>
+                        <span class="badge roblox">Roblox Studio</span>
+                        <span class="badge">Planning</span>
+                        <span class="badge">Data Analysis</span>
+                    </div>
                 </div>
-
-                <div class="subsection">
-                    <h4>Roblox人気ゲーム分析レポート：</h4>
-                    <p>
-                        プレイヤー維持率・収益性・配信者連携など、ヒット作の構造を分析。<br>
-                        ▶ <a href="docs/roblox_hit_analysis.pdf" target="_blank" rel="noopener noreferrer">分析レポート（PDF）を開く</a>
-                    </p>
-                </div>
-
-                <div class="subsection">
-                    <h4>ホラーゲーム分析レポート：</h4>
-                    <p>
-                        『DOORS』『Rainbow Friends』などの演出・共体験要素・拡散性を分析。<br>
-                        ▶ <a href="docs/roblox_horror_analysis.pdf" target="_blank" rel="noopener noreferrer">ホラーゲームレポート（PDF）を開く</a>
-                    </p>
+                <div class="project-links">
+                    <a href="projects.html#proj-stairs" class="btn-primary">View Project: Stairs</a>
+                    <a href="https://www.moze.ai/" target="_blank" class="btn-secondary">Company HP</a>
                 </div>
             </div>
-        </div>
 
-        <!-- NEW: サイバーエージェント UIDA -->
-        <div class="project-card" id="exp-uida">
-            <h3 class="project-title">サイバーエージェント UIDA（デザインサマーインターン）</h3>
-            <div class="image-slider image-slider--narrow" aria-label="UIDA インターン スクリーンショット">
-                <div class="slider-container">
-                    <img src="images/uida1.png" alt="UIDA インターン スクリーンショット 1" class="project-img" loading="lazy" />
-                    <img src="images/uida2.png" alt="UIDA インターン スクリーンショット 2" class="project-img" loading="lazy" />
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/moze-logo.png" alt="moze logo" class="project-img img-contain">
                 </div>
-                <button class="prev-btn" aria-label="前の画像へ">&lt;</button>
-                <button class="next-btn" aria-label="次の画像へ">&gt;</button>
-            </div>
-            <button class="toggle-details">詳細を見る</button>
-            <div class="project-details">
-                <div class="subsection">
-                    <h4>参加概要</h4>
-                    <ul class="subsection-list">
-                        <li>テーマは<strong>全員共通</strong>、チームは分かれて活動（相互に相談し合う仲間というスタイル）。</li>
-                        <li>作品制作は<strong>個人で完遂</strong>（情報設計〜デザイン〜実装まで自身で担当）。</li>
-                        <li>これまで<strong>エンジニア</strong>としてゲーム制作を行ってきたが、<strong>デザイナーとしてゲームUI</strong>を作るのは初挑戦。</li>
-                        <li>チームメンバーやメンターからの助言を得ながら、完成度の高いUIを設計・制作。</li>
+
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年〜現在（長期インターン）</p>
+                    <p><strong>役割：</strong> 企画・ディレクション・データ分析（3名チームのリーダー）</p>
+
+                    <h4>主な業務・成果</h4>
+                    <ul>
+                        <li><strong>新規タイトル開発：</strong>ホラー脱出ゲーム「Stairs」の企画からリリースまでを主導。</li>
+                        <li><strong>データドリブンな改善：</strong>リリース直後の同時接続者数伸び悩みに対し、「面白さを感じる前の離脱」を仮説として設定。プレイデータを分析してボトルネック（開始直後の導線・テンポ）を特定・改善した結果、同時接続者数を<strong>8倍に成長</strong>させました。</li>
+                        <li><strong>実績：</strong>改善による指標向上などが評価され、Roblox公式の注目作品枠 <strong>"Home Recommendation" に掲載</strong>されました。</li>
                     </ul>
-                    <p class="note-link">
-                        ▶ 公式情報：<a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" rel="noopener noreferrer">UIDA - CyberAgent</a>
-                    </p>
+
+                    <h4>制作レポート（社内提案資料）</h4>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                        <a href="docs/roblox_hit_analysis.pdf" target="_blank" class="btn-secondary" style="font-size: 0.85rem;">
+                            📄 Robloxヒット分析 (PDF)
+                        </a>
+                        <a href="docs/roblox_horror_analysis.pdf" target="_blank" class="btn-secondary" style="font-size: 0.85rem;">
+                            📄 ホラー演出分析 (PDF)
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="project-card" id="exp-cygames">
-            <h3 class="project-title">サイゲームズ サマーインターン（エンジニア）</h3>
+        <article class="project-card" id="exp-uida">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">CyberAgent UIDA</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Design Intern</span>
+                        <span class="badge">UI/UX Design</span>
+                        <span class="badge unity">Unity</span>
+                        <span class="badge">Figma</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="projects.html#proj-uida" class="btn-primary">View Project: UI Design</a>
+                    <a href="https://www.cyberagent.co.jp/careers/students/event/detail/id=31982" target="_blank" class="btn-secondary">Event Page</a>
+                </div>
+            </div>
 
-            <!-- ロゴはMoze/UIDAと同じ見た目で統一 -->
-            <img src="images/cygames.png" alt="Cygames サマーインターン" class="project-img logo" loading="lazy" />
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px;">
+                        <div class="slider-track" style="display: flex; transition: transform 0.3s ease;">
+                            <img src="images/uida1.png" alt="UIDA Slide 1" class="project-img" style="flex-shrink:0; width:100%;">
+                            <img src="images/uida2.png" alt="UIDA Slide 2" class="project-img" style="flex-shrink:0; width:100%;">
+                        </div>
+                        <button class="prev-btn" aria-label="Previous">&lt;</button>
+                        <button class="next-btn" aria-label="Next">&gt;</button>
+                    </div>
+                </div>
 
-            <button class="toggle-details" aria-expanded="false" aria-controls="cygames-details">詳細を見る</button>
-            <div id="cygames-details" class="project-details">
-                <div class="subsection">
-                    <h4>参加概要</h4>
-                    <ul class="subsection-list">
-                        <li><strong>エンジニアサマーインターン</strong>に参加。現場メンターのレビューのもと、短期開発課題に取り組みました。</li>
-                        <li>課せられた課題を着実にこなし、ゲーム開発の実務フロー（要件整理→実装→検証→改善）を体験。</li>
-                        <li><strong>チーム開発でのコミュニケーション力や実装能力を高く評価</strong>された。</li>
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年 夏（短期インターン）</p>
+                    <p><strong>概要：</strong> エンジニアとしてではなく「UIデザイナー」として参加。ゲームUIの情報設計から実装までを個人で完遂。</p>
+
+                    <h4>Learning & Growth</h4>
+                    <ul>
+                        <li><strong>越境への挑戦：</strong>普段のエンジニア視点だけでなく、デザイナー視点での「手触り感」「視線誘導」を意識したUI構築を実践。</li>
+                        <li><strong>フィードバックループ：</strong>プロのデザイナーからのレビューを即座にUnity実装へ反映するサイクルを回し、ブラッシュアップの速度と質を評価された。</li>
                     </ul>
-                    <p class="note-link">
-                        ▶ 公式情報：<a href="https://fresh.cygames.co.jp/internship/detail.html?engineer&summer" target="_blank" rel="noopener noreferrer">Cygames Summer Internship（エンジニア）</a>
-                    </p>
                 </div>
             </div>
-        </div>
+        </article>
+
+        <article class="project-card" id="exp-cygames">
+            <div class="project-header">
+                <div>
+                    <h3 class="project-title">Cygames Summer Internship</h3>
+                    <div class="tech-stack">
+                        <span class="badge role">Engineer Intern</span>
+                        <span class="badge unity">Unity</span>
+                        <span class="badge csharp">C#</span>
+                        <span class="badge">Team Dev</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://fresh.cygames.co.jp/internship/detail.html?engineer&summer" target="_blank" class="btn-secondary">Internship Info</a>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-visuals">
+                    <img src="images/cygames.png" alt="Cygames logo" class="project-img img-contain">
+                </div>
+
+                <div class="project-info">
+                    <p><strong>期間：</strong> 2024年 夏（短期インターン）</p>
+                    <p><strong>コース：</strong> エンジニアコース</p>
+
+                    <h4>主な成果</h4>
+                    <ul>
+                        <li><strong>実務フローの習得：</strong>大規模ゲーム開発を想定した「要件整理 → 設計 → 実装 → 検証」という厳格な開発フローを体験。</li>
+                        <li><strong>評価ポイント：</strong>短期開発課題において、可読性の高いコード実装力と、チーム開発を円滑に進めるコミュニケーション能力が高く評価された。</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
     </section>
 
-
-
-
-    <!-- フッター -->
     <footer>
-        <p>© 2025 多那瀬周</p>
+        <p style="text-align:center; margin-top:50px; color:#888;">© 2025 Shu Tanase</p>
     </footer>
 
     <script src="js/main.js"></script>
 </body>
-    </html>
+</html>
